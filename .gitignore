@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.run/
+capture/
+capture-*/
+*.log
+.env
+.env.*
+!.env.example
+__pycache__/
+*.py[cod]
+*.blend1
+Thumbs.db
+.DS_Store
