@@ -1,0 +1,82 @@
+{
+  "label_source_root": ".",
+  "sources": {
+    "handled_lacquer": {
+      "path": "assets/textures/raw/handled_lacquer_raw.jpg",
+      "model_tool": "Nano Banana via Antigravity native generate_image / image-generator subagent",
+      "prompt": "A flat orthographic material sample of rich deep oxblood-brown lacquered hardwood as on a finely made nineteenth-century railway archive cabinet, matching a warm dark oxblood-mahogany palette (#3d1814 to #56231d). Quiet fine wood pores and restrained hairline age variation, still predominantly intact smooth lacquer. Uniform neutral diffuse illumination, no shadows, reflections, highlight bands, directional lighting or perspective. One continuous material surface; no cabinet, edges, handles, borders, panels, printed marks, metal flecks or objects. No broad orange wear bands, cracked mud pattern or repeated damaged stripes. Subtle, photographic, close-up surface fidelity, seamless flat texture tile.",
+      "reference_inputs": [],
+      "repair_seams": true,
+      "generation_metadata": {
+        "prompt_status": "exact successful generate_image Prompt matched to output filename in same native tool-result step",
+        "text_orchestrator_model": "gemini-4-argon-high",
+        "image_backend_model_id": "not exposed by inspected output",
+        "exact_native_parameters": {
+          "AspectRatio": "1:1",
+          "ImageName": "archive_lacquer",
+          "Prompt": "A flat orthographic material sample of rich deep oxblood-brown lacquered hardwood as on a finely made nineteenth-century railway archive cabinet, matching a warm dark oxblood-mahogany palette (#3d1814 to #56231d). Quiet fine wood pores and restrained hairline age variation, still predominantly intact smooth lacquer. Uniform neutral diffuse illumination, no shadows, reflections, highlight bands, directional lighting or perspective. One continuous material surface; no cabinet, edges, handles, borders, panels, printed marks, metal flecks or objects. No broad orange wear bands, cracked mud pattern or repeated damaged stripes. Subtle, photographic, close-up surface fidelity, seamless flat texture tile.",
+          "toolAction": "Retrying texture generation",
+          "toolSummary": "Retry archive lacquer texture"
+        },
+        "tool_name": "generate_image",
+        "scale_change_note": "Physical lacquer tile chosen as 0.5 m; source scale was not measured."
+      },
+      "expected_sha256": "4fa574f52d1900b06615c17b986086db3e8693ab5b0f2db15ad3ac01d1e8ab12"
+    },
+    "luggage_canvas": {
+      "path": "assets/textures/raw/luggage_canvas_raw.jpg",
+      "model_tool": "Nano Banana via Antigravity native generate_image / image-generator subagent",
+      "prompt": "Flat orthographic macro material sample of tightly woven aged ochre-olive cotton luggage canvas (#7a6a46 to #8c7a53). Fine real interlaced thread structure, quiet natural fibre variation, subdued used colour, uniform neutral diffuse illumination. One continuous textile surface only: NO labels, words, numbers, frames, routing panels, leather tabs, straps, buckles, seams, borders, shadows, perspective or objects. Fine scale suitable for a 0.4m material tile. Seamless or visually repeatable coverage. Do not depict a suitcase or decorative label design.",
+      "reference_inputs": [],
+      "repair_seams": true,
+      "generation_metadata": {
+        "prompt_status": "exact successful generate_image Prompt matched to output filename in same native tool-result step",
+        "text_orchestrator_model": "gemini-4-argon-high",
+        "image_backend_model_id": "not exposed by inspected output",
+        "exact_native_parameters": {
+          "AspectRatio": "1:1",
+          "ImageName": "luggage_canvas_clean",
+          "Prompt": "Flat orthographic macro material sample of tightly woven aged ochre-olive cotton luggage canvas (#7a6a46 to #8c7a53). Fine real interlaced thread structure, quiet natural fibre variation, subdued used colour, uniform neutral diffuse illumination. One continuous textile surface only: NO labels, words, numbers, frames, routing panels, leather tabs, straps, buckles, seams, borders, shadows, perspective or objects. Fine scale suitable for a 0.4m material tile. Seamless or visually repeatable coverage. Do not depict a suitcase or decorative label design.",
+          "toolAction": "Generating canvas texture",
+          "toolSummary": "Canvas texture generation"
+        },
+        "scale_change_note": "Prompt requested 0.4m tile; production maps to0.10m after inspecting photographic yarn scale, without claiming measured source dimensions.",
+        "tool_name": "generate_image"
+      },
+      "expected_sha256": "cbd670bd278d77cf0f331023763c39bc8f168f04c3d64c8c4bcb757c5a2add06",
+      "broad_colour_suppression": {
+        "sigma_fraction": 0.02,
+        "strength": 1.0
+      },
+      "colour_microcontrast": 0.3
+    },
+    "worn_lining": {
+      "path": "assets/textures/raw/worn_lining_raw.jpg",
+      "model_tool": "Nano Banana via Antigravity native generate_image / image-generator subagent",
+      "prompt": "Flat orthographic close-up material sample of deep burgundy wine-red wool baize lining. Dense soft short felted fibres with subtle tiny-scale nap variation, matte and tactile; the surface should read unmistakably as wool felt, not painted wood. One continuous textile surface with uniform neutral diffuse illumination. NO long streaks, broad pale patches, brushed-paint marks, grain lines, sine stripes, borders, objects, stitching, folds, shadows, perspective, labels or letters. No distressed plank pattern. Fine natural fibre texture suitable for a 0.3m tile.",
+      "reference_inputs": [],
+      "repair_seams": true,
+      "generation_metadata": {
+        "prompt_status": "exact successful generate_image Prompt matched to output filename in same native tool-result step",
+        "text_orchestrator_model": "gemini-4-argon-high",
+        "image_backend_model_id": "not exposed by inspected output",
+        "exact_native_parameters": {
+          "AspectRatio": "1:1",
+          "ImageName": "archive_wool_baize",
+          "Prompt": "Flat orthographic close-up material sample of deep burgundy wine-red wool baize lining. Dense soft short felted fibres with subtle tiny-scale nap variation, matte and tactile; the surface should read unmistakably as wool felt, not painted wood. One continuous textile surface with uniform neutral diffuse illumination. NO long streaks, broad pale patches, brushed-paint marks, grain lines, sine stripes, borders, objects, stitching, folds, shadows, perspective, labels or letters. No distressed plank pattern. Fine natural fibre texture suitable for a 0.3m tile.",
+          "toolAction": "Generating wool baize texture",
+          "toolSummary": "Generate wool baize texture"
+        },
+        "scale_change_note": "Prompt requested0.3m tile; production uses0.25m and crops64px border on all sides.",
+        "tool_name": "generate_image"
+      },
+      "crop_pixels": [
+        64,
+        64,
+        960,
+        960
+      ],
+      "expected_sha256": "835a4c97c5ebd5a6e70da2d61c7d38f6312d0d3e463339cfc9423b066333f8bd"
+    }
+  }
+}

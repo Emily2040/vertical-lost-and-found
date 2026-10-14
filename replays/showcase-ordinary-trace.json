@@ -1,0 +1,1747 @@
+[
+  {
+    "type": "input",
+    "tick": 0,
+    "t": 0,
+    "moveX": 0,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 360,
+    "t": 3,
+    "moveX": 1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "action",
+    "tick": 360,
+    "t": 3,
+    "action": "jump",
+    "params": {},
+    "result": {
+      "ok": true,
+      "vx": 4.4,
+      "vy": 6.6
+    }
+  },
+  {
+    "type": "input",
+    "tick": 360,
+    "t": 3,
+    "moveX": -1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 396,
+    "t": 3.3,
+    "moveX": 0,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 408,
+    "t": 3.4,
+    "moveX": -1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 420,
+    "t": 3.5,
+    "moveX": 1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 432,
+    "t": 3.6,
+    "moveX": -1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 456,
+    "t": 3.8,
+    "moveX": 1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 468,
+    "t": 3.9,
+    "moveX": -1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 480,
+    "t": 4,
+    "moveX": 1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 492,
+    "t": 4.1,
+    "moveX": -1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 504,
+    "t": 4.2,
+    "moveX": 1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 516,
+    "t": 4.3,
+    "moveX": -1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 528,
+    "t": 4.4,
+    "moveX": 0,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "action",
+    "tick": 528,
+    "t": 4.4,
+    "action": "focus_next",
+    "params": {},
+    "result": {
+      "ok": true,
+      "drawerId": "drawer_burst_01"
+    }
+  },
+  {
+    "type": "action",
+    "tick": 564,
+    "t": 4.7,
+    "action": "focus_next",
+    "params": {},
+    "result": {
+      "ok": true,
+      "drawerId": "drawer_catch_02"
+    }
+  },
+  {
+    "type": "action",
+    "tick": 600,
+    "t": 5,
+    "action": "focus_next",
+    "params": {},
+    "result": {
+      "ok": true,
+      "drawerId": "drawer_s1_a"
+    }
+  },
+  {
+    "type": "input",
+    "tick": 600,
+    "t": 5,
+    "moveX": 0,
+    "moveZ": 0,
+    "railPull": 1
+  },
+  {
+    "type": "input",
+    "tick": 624,
+    "t": 5.2,
+    "moveX": 0,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "action",
+    "tick": 636,
+    "t": 5.3,
+    "action": "toggle_latch",
+    "params": {},
+    "result": {
+      "ok": false,
+      "reason": "missed_notch",
+      "diff": 0.23000000000000026,
+      "nearestNotch": 0.6,
+      "message": "LATCH REJECTED on #104: Rail at 0.37m misses notch 0.60m (±0.10m)"
+    }
+  },
+  {
+    "type": "input",
+    "tick": 636,
+    "t": 5.3,
+    "moveX": 0,
+    "moveZ": 0,
+    "railPull": 1
+  },
+  {
+    "type": "input",
+    "tick": 708,
+    "t": 5.9,
+    "moveX": 0,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "action",
+    "tick": 708,
+    "t": 5.9,
+    "action": "toggle_latch",
+    "params": {},
+    "result": {
+      "ok": true,
+      "latched": true,
+      "notch": 1.3,
+      "drawer": "drawer_s1_a"
+    }
+  },
+  {
+    "type": "action",
+    "tick": 744,
+    "t": 6.2,
+    "action": "focus_next",
+    "params": {
+      "kind": "payload"
+    },
+    "result": {
+      "ok": true,
+      "payloadId": "payload_trunk_01"
+    }
+  },
+  {
+    "type": "action",
+    "tick": 780,
+    "t": 6.5,
+    "action": "interact_payload",
+    "params": {},
+    "result": {
+      "ok": true,
+      "mode": "pickup",
+      "payloadId": "payload_trunk_01",
+      "massKg": 35,
+      "distance": 0.7119070390627187
+    }
+  },
+  {
+    "type": "input",
+    "tick": 816,
+    "t": 6.8,
+    "moveX": 1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "action",
+    "tick": 816,
+    "t": 6.8,
+    "action": "jump",
+    "params": {},
+    "result": {
+      "ok": true,
+      "vx": 4.4,
+      "vy": 6.6
+    }
+  },
+  {
+    "type": "input",
+    "tick": 816,
+    "t": 6.8,
+    "moveX": 0,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 828,
+    "t": 6.8999999999999995,
+    "moveX": -1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 864,
+    "t": 7.2,
+    "moveX": 1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 876,
+    "t": 7.3,
+    "moveX": -1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 900,
+    "t": 7.5,
+    "moveX": 0,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 912,
+    "t": 7.6,
+    "moveX": -1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 924,
+    "t": 7.7,
+    "moveX": 1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 936,
+    "t": 7.8,
+    "moveX": -1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 948,
+    "t": 7.8999999999999995,
+    "moveX": 1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 960,
+    "t": 8,
+    "moveX": 0,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "action",
+    "tick": 960,
+    "t": 8,
+    "action": "interact_payload",
+    "params": {},
+    "result": {
+      "ok": true,
+      "holderId": "drawer_s1_a",
+      "massKg": 35
+    }
+  },
+  {
+    "type": "action",
+    "tick": 996,
+    "t": 8.3,
+    "action": "focus_next",
+    "params": {},
+    "result": {
+      "ok": true,
+      "drawerId": "drawer_s1_b"
+    }
+  },
+  {
+    "type": "input",
+    "tick": 996,
+    "t": 8.3,
+    "moveX": 0,
+    "moveZ": 0,
+    "railPull": 1
+  },
+  {
+    "type": "input",
+    "tick": 1092,
+    "t": 9.1,
+    "moveX": 0,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "action",
+    "tick": 1092,
+    "t": 9.1,
+    "action": "toggle_latch",
+    "params": {},
+    "result": {
+      "ok": true,
+      "latched": true,
+      "notch": 1.3,
+      "drawer": "drawer_s1_b"
+    }
+  },
+  {
+    "type": "input",
+    "tick": 1128,
+    "t": 9.4,
+    "moveX": 1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "action",
+    "tick": 1128,
+    "t": 9.4,
+    "action": "jump",
+    "params": {},
+    "result": {
+      "ok": true,
+      "vx": 4.4,
+      "vy": 6.6
+    }
+  },
+  {
+    "type": "input",
+    "tick": 1128,
+    "t": 9.4,
+    "moveX": -1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 1164,
+    "t": 9.7,
+    "moveX": 0,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 1176,
+    "t": 9.8,
+    "moveX": -1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 1188,
+    "t": 9.9,
+    "moveX": 1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 1200,
+    "t": 10,
+    "moveX": -1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 1224,
+    "t": 10.2,
+    "moveX": 1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 1236,
+    "t": 10.3,
+    "moveX": -1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 1248,
+    "t": 10.4,
+    "moveX": 1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 1260,
+    "t": 10.5,
+    "moveX": 0,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "action",
+    "tick": 1368,
+    "t": 11.4,
+    "action": "focus_next",
+    "params": {},
+    "result": {
+      "ok": true,
+      "drawerId": "drawer_s1_c"
+    }
+  },
+  {
+    "type": "action",
+    "tick": 1404,
+    "t": 11.7,
+    "action": "toggle_latch",
+    "params": {},
+    "result": {
+      "ok": true,
+      "latched": true,
+      "notch": 1.95,
+      "drawer": "drawer_s1_c"
+    }
+  },
+  {
+    "type": "input",
+    "tick": 1440,
+    "t": 12,
+    "moveX": -1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "action",
+    "tick": 1440,
+    "t": 12,
+    "action": "jump",
+    "params": {},
+    "result": {
+      "ok": true,
+      "vx": -4.4,
+      "vy": 6.6
+    }
+  },
+  {
+    "type": "input",
+    "tick": 1440,
+    "t": 12,
+    "moveX": 1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 1488,
+    "t": 12.4,
+    "moveX": -1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 1500,
+    "t": 12.5,
+    "moveX": 1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 1524,
+    "t": 12.7,
+    "moveX": -1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 1536,
+    "t": 12.8,
+    "moveX": 1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 1548,
+    "t": 12.9,
+    "moveX": -1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 1560,
+    "t": 13,
+    "moveX": 1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 1572,
+    "t": 13.1,
+    "moveX": 0,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "action",
+    "tick": 1632,
+    "t": 13.6,
+    "action": "interact_payload",
+    "params": {},
+    "result": {
+      "ok": true,
+      "mode": "pickup",
+      "payloadId": "payload_trunk_01",
+      "massKg": 35,
+      "distance": 1.1260223658231256
+    }
+  },
+  {
+    "type": "input",
+    "tick": 1668,
+    "t": 13.9,
+    "moveX": 1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "action",
+    "tick": 1668,
+    "t": 13.9,
+    "action": "jump",
+    "params": {},
+    "result": {
+      "ok": true,
+      "vx": 4.4,
+      "vy": 6.6
+    }
+  },
+  {
+    "type": "input",
+    "tick": 1668,
+    "t": 13.9,
+    "moveX": -1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 1704,
+    "t": 14.2,
+    "moveX": 0,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 1716,
+    "t": 14.299999999999999,
+    "moveX": -1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 1728,
+    "t": 14.4,
+    "moveX": 1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 1740,
+    "t": 14.5,
+    "moveX": -1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 1764,
+    "t": 14.7,
+    "moveX": 1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 1776,
+    "t": 14.799999999999999,
+    "moveX": -1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 1788,
+    "t": 14.9,
+    "moveX": 1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 1800,
+    "t": 15,
+    "moveX": 0,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 1800,
+    "t": 15,
+    "moveX": 1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "action",
+    "tick": 1800,
+    "t": 15,
+    "action": "jump",
+    "params": {},
+    "result": {
+      "ok": true,
+      "vx": 4.4,
+      "vy": 6.6
+    }
+  },
+  {
+    "type": "input",
+    "tick": 1800,
+    "t": 15,
+    "moveX": -1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 1824,
+    "t": 15.2,
+    "moveX": 0,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 1836,
+    "t": 15.299999999999999,
+    "moveX": -1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 1848,
+    "t": 15.4,
+    "moveX": 0,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 1860,
+    "t": 15.5,
+    "moveX": -1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 1872,
+    "t": 15.6,
+    "moveX": 1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 1884,
+    "t": 15.7,
+    "moveX": -1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 1908,
+    "t": 15.9,
+    "moveX": 1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 1920,
+    "t": 16,
+    "moveX": -1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 1932,
+    "t": 16.1,
+    "moveX": 0,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "action",
+    "tick": 1932,
+    "t": 16.1,
+    "action": "focus_next",
+    "params": {},
+    "result": {
+      "ok": true,
+      "drawerId": "drawer_s2_ledge"
+    }
+  },
+  {
+    "type": "input",
+    "tick": 1932,
+    "t": 16.1,
+    "moveX": 0,
+    "moveZ": 0,
+    "railPull": 1
+  },
+  {
+    "type": "input",
+    "tick": 2028,
+    "t": 16.9,
+    "moveX": 0,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "action",
+    "tick": 2028,
+    "t": 16.9,
+    "action": "toggle_latch",
+    "params": {},
+    "result": {
+      "ok": true,
+      "latched": true,
+      "notch": 1.3,
+      "drawer": "drawer_s2_ledge"
+    }
+  },
+  {
+    "type": "input",
+    "tick": 2064,
+    "t": 17.2,
+    "moveX": 1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "action",
+    "tick": 2064,
+    "t": 17.2,
+    "action": "jump",
+    "params": {},
+    "result": {
+      "ok": true,
+      "vx": 4.4,
+      "vy": 6.6
+    }
+  },
+  {
+    "type": "input",
+    "tick": 2064,
+    "t": 17.2,
+    "moveX": -1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 2088,
+    "t": 17.4,
+    "moveX": 0,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 2100,
+    "t": 17.5,
+    "moveX": -1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 2112,
+    "t": 17.6,
+    "moveX": 0,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 2124,
+    "t": 17.7,
+    "moveX": -1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 2136,
+    "t": 17.8,
+    "moveX": 1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 2148,
+    "t": 17.9,
+    "moveX": -1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 2172,
+    "t": 18.1,
+    "moveX": 1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 2184,
+    "t": 18.2,
+    "moveX": -1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 2196,
+    "t": 18.3,
+    "moveX": 0,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "action",
+    "tick": 2196,
+    "t": 18.3,
+    "action": "interact_payload",
+    "params": {},
+    "result": {
+      "ok": true,
+      "holderId": "drawer_s2_ledge",
+      "massKg": 35
+    }
+  },
+  {
+    "type": "action",
+    "tick": 2232,
+    "t": 18.6,
+    "action": "toggle_hatch",
+    "params": {},
+    "result": {
+      "ok": true,
+      "open": true
+    }
+  },
+  {
+    "type": "action",
+    "tick": 2268,
+    "t": 18.9,
+    "action": "focus_next",
+    "params": {
+      "kind": "payload"
+    },
+    "result": {
+      "ok": true,
+      "payloadId": "payload_carpet_02"
+    }
+  },
+  {
+    "type": "action",
+    "tick": 2304,
+    "t": 19.2,
+    "action": "interact_payload",
+    "params": {},
+    "result": {
+      "ok": true,
+      "mode": "pickup",
+      "payloadId": "payload_carpet_02",
+      "massKg": 25,
+      "distance": 1.3315858211529223
+    }
+  },
+  {
+    "type": "action",
+    "tick": 2340,
+    "t": 19.5,
+    "action": "focus_next",
+    "params": {},
+    "result": {
+      "ok": true,
+      "drawerId": "drawer_s2_counter"
+    }
+  },
+  {
+    "type": "action",
+    "tick": 2376,
+    "t": 19.8,
+    "action": "interact_payload",
+    "params": {},
+    "result": {
+      "ok": true,
+      "holderId": "drawer_s2_counter",
+      "massKg": 25
+    }
+  },
+  {
+    "type": "action",
+    "tick": 2412,
+    "t": 20.1,
+    "action": "focus_next",
+    "params": {
+      "kind": "payload"
+    },
+    "result": {
+      "ok": true,
+      "payloadId": "payload_instruments_05"
+    }
+  },
+  {
+    "type": "action",
+    "tick": 2448,
+    "t": 20.4,
+    "action": "interact_payload",
+    "params": {},
+    "result": {
+      "ok": true,
+      "mode": "pickup",
+      "payloadId": "payload_instruments_05",
+      "massKg": 45,
+      "distance": 0.8241884548328403
+    }
+  },
+  {
+    "type": "action",
+    "tick": 2484,
+    "t": 20.7,
+    "action": "interact_payload",
+    "params": {},
+    "result": {
+      "ok": true,
+      "holderId": "drawer_s2_counter",
+      "massKg": 45
+    }
+  },
+  {
+    "type": "action",
+    "tick": 2520,
+    "t": 21,
+    "action": "focus_next",
+    "params": {
+      "kind": "payload"
+    },
+    "result": {
+      "ok": true,
+      "payloadId": null
+    }
+  },
+  {
+    "type": "action",
+    "tick": 2556,
+    "t": 21.3,
+    "action": "focus_next",
+    "params": {
+      "kind": "payload"
+    },
+    "result": {
+      "ok": true,
+      "payloadId": "payload_trunk_01"
+    }
+  },
+  {
+    "type": "action",
+    "tick": 2592,
+    "t": 21.6,
+    "action": "interact_payload",
+    "params": {},
+    "result": {
+      "ok": true,
+      "mode": "pickup",
+      "payloadId": "payload_trunk_01",
+      "massKg": 35,
+      "distance": 0.3870217289117191
+    }
+  },
+  {
+    "type": "input",
+    "tick": 2628,
+    "t": 21.9,
+    "moveX": 1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "action",
+    "tick": 2628,
+    "t": 21.9,
+    "action": "jump",
+    "params": {},
+    "result": {
+      "ok": true,
+      "vx": 4.4,
+      "vy": 6.6
+    }
+  },
+  {
+    "type": "input",
+    "tick": 2628,
+    "t": 21.9,
+    "moveX": 0,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 2640,
+    "t": 22,
+    "moveX": -1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 2676,
+    "t": 22.3,
+    "moveX": 0,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 2688,
+    "t": 22.4,
+    "moveX": -1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 2700,
+    "t": 22.5,
+    "moveX": 1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 2712,
+    "t": 22.6,
+    "moveX": -1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 2736,
+    "t": 22.8,
+    "moveX": 1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 2748,
+    "t": 22.9,
+    "moveX": -1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 2760,
+    "t": 23,
+    "moveX": 1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 2772,
+    "t": 23.1,
+    "moveX": -1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 2784,
+    "t": 23.2,
+    "moveX": 0,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "action",
+    "tick": 2796,
+    "t": 23.3,
+    "action": "focus_next",
+    "params": {},
+    "result": {
+      "ok": true,
+      "drawerId": "drawer_s2_lift"
+    }
+  },
+  {
+    "type": "action",
+    "tick": 2832,
+    "t": 23.6,
+    "action": "toggle_latch",
+    "params": {},
+    "result": {
+      "ok": true,
+      "latched": false,
+      "drawer": "drawer_s2_lift"
+    }
+  },
+  {
+    "type": "action",
+    "tick": 3540,
+    "t": 29.5,
+    "action": "toggle_latch",
+    "params": {},
+    "result": {
+      "ok": true,
+      "latched": true,
+      "notch": 9.917,
+      "drawer": "drawer_s2_lift"
+    }
+  },
+  {
+    "type": "action",
+    "tick": 3576,
+    "t": 29.8,
+    "action": "focus_next",
+    "params": {},
+    "result": {
+      "ok": true,
+      "drawerId": "drawer_s3_a"
+    }
+  },
+  {
+    "type": "action",
+    "tick": 3612,
+    "t": 30.099999999999998,
+    "action": "focus_next",
+    "params": {},
+    "result": {
+      "ok": false,
+      "drawerId": null
+    }
+  },
+  {
+    "type": "action",
+    "tick": 3648,
+    "t": 30.4,
+    "action": "interact_payload",
+    "params": {},
+    "result": {
+      "ok": true,
+      "mode": "chute",
+      "chute": "chute_upper_west"
+    }
+  },
+  {
+    "type": "action",
+    "tick": 4200,
+    "t": 35,
+    "action": "focus_next",
+    "params": {},
+    "result": {
+      "ok": true,
+      "drawerId": "drawer_s2_lift"
+    }
+  },
+  {
+    "type": "action",
+    "tick": 4236,
+    "t": 35.3,
+    "action": "focus_next",
+    "params": {},
+    "result": {
+      "ok": true,
+      "drawerId": "drawer_s3_a"
+    }
+  },
+  {
+    "type": "action",
+    "tick": 4272,
+    "t": 35.6,
+    "action": "toggle_latch",
+    "params": {},
+    "result": {
+      "ok": true,
+      "latched": true,
+      "notch": 1.95,
+      "drawer": "drawer_s3_a"
+    }
+  },
+  {
+    "type": "input",
+    "tick": 4308,
+    "t": 35.9,
+    "moveX": -1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "action",
+    "tick": 4308,
+    "t": 35.9,
+    "action": "jump",
+    "params": {},
+    "result": {
+      "ok": true,
+      "vx": -4.4,
+      "vy": 6.6
+    }
+  },
+  {
+    "type": "input",
+    "tick": 4308,
+    "t": 35.9,
+    "moveX": 1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 4332,
+    "t": 36.1,
+    "moveX": 0,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 4344,
+    "t": 36.2,
+    "moveX": 1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 4356,
+    "t": 36.3,
+    "moveX": 0,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 4368,
+    "t": 36.4,
+    "moveX": 1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 4380,
+    "t": 36.5,
+    "moveX": -1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 4392,
+    "t": 36.6,
+    "moveX": 1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 4416,
+    "t": 36.8,
+    "moveX": -1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 4428,
+    "t": 36.9,
+    "moveX": 1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 4440,
+    "t": 37,
+    "moveX": 0,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "action",
+    "tick": 4440,
+    "t": 37,
+    "action": "focus_next",
+    "params": {
+      "kind": "payload"
+    },
+    "result": {
+      "ok": true,
+      "payloadId": "payload_ceramic_03"
+    }
+  },
+  {
+    "type": "action",
+    "tick": 4476,
+    "t": 37.3,
+    "action": "focus_next",
+    "params": {
+      "kind": "payload"
+    },
+    "result": {
+      "ok": true,
+      "payloadId": "payload_umbrella_04"
+    }
+  },
+  {
+    "type": "action",
+    "tick": 4512,
+    "t": 37.6,
+    "action": "interact_payload",
+    "params": {},
+    "result": {
+      "ok": true,
+      "mode": "pickup",
+      "payloadId": "payload_umbrella_04",
+      "massKg": 15,
+      "distance": 0.6687170390625526
+    }
+  },
+  {
+    "type": "action",
+    "tick": 4548,
+    "t": 37.9,
+    "action": "focus_next",
+    "params": {},
+    "result": {
+      "ok": true,
+      "drawerId": "drawer_s3_b"
+    }
+  },
+  {
+    "type": "action",
+    "tick": 4584,
+    "t": 38.2,
+    "action": "focus_next",
+    "params": {},
+    "result": {
+      "ok": false,
+      "drawerId": null
+    }
+  },
+  {
+    "type": "action",
+    "tick": 4620,
+    "t": 38.5,
+    "action": "interact_payload",
+    "params": {},
+    "result": {
+      "ok": true,
+      "mode": "chute",
+      "chute": "chute_upper_east"
+    }
+  },
+  {
+    "type": "action",
+    "tick": 4800,
+    "t": 40,
+    "action": "focus_next",
+    "params": {
+      "kind": "payload"
+    },
+    "result": {
+      "ok": true,
+      "payloadId": "payload_ceramic_03"
+    }
+  },
+  {
+    "type": "action",
+    "tick": 4836,
+    "t": 40.3,
+    "action": "interact_payload",
+    "params": {},
+    "result": {
+      "ok": true,
+      "mode": "pickup",
+      "payloadId": "payload_ceramic_03",
+      "massKg": 20,
+      "distance": 0.3922638445447517
+    }
+  },
+  {
+    "type": "action",
+    "tick": 4872,
+    "t": 40.6,
+    "action": "interact_payload",
+    "params": {},
+    "result": {
+      "ok": true,
+      "mode": "chute",
+      "chute": "chute_upper_east"
+    }
+  },
+  {
+    "type": "input",
+    "tick": 4908,
+    "t": 40.9,
+    "moveX": -1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "action",
+    "tick": 4908,
+    "t": 40.9,
+    "action": "jump",
+    "params": {},
+    "result": {
+      "ok": true,
+      "vx": -4.4,
+      "vy": 6.6
+    }
+  },
+  {
+    "type": "input",
+    "tick": 4920,
+    "t": 41,
+    "moveX": 1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 4980,
+    "t": 41.5,
+    "moveX": -1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 4992,
+    "t": 41.6,
+    "moveX": 1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 5016,
+    "t": 41.8,
+    "moveX": -1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 5028,
+    "t": 41.9,
+    "moveX": 1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 5040,
+    "t": 42,
+    "moveX": -1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 5052,
+    "t": 42.1,
+    "moveX": 1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 5064,
+    "t": 42.2,
+    "moveX": 0,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "action",
+    "tick": 5508,
+    "t": 45.9,
+    "action": "focus_next",
+    "params": {},
+    "result": {
+      "ok": true,
+      "drawerId": "drawer_s3_b"
+    }
+  },
+  {
+    "type": "action",
+    "tick": 5544,
+    "t": 46.2,
+    "action": "toggle_latch",
+    "params": {},
+    "result": {
+      "ok": true,
+      "latched": true,
+      "notch": 13.616999999999999,
+      "drawer": "drawer_s3_b"
+    }
+  },
+  {
+    "type": "action",
+    "tick": 5580,
+    "t": 46.5,
+    "action": "focus_next",
+    "params": {},
+    "result": {
+      "ok": true,
+      "drawerId": "drawer_s3_garden"
+    }
+  },
+  {
+    "type": "action",
+    "tick": 5616,
+    "t": 46.8,
+    "action": "toggle_latch",
+    "params": {},
+    "result": {
+      "ok": true,
+      "latched": true,
+      "notch": 2.05,
+      "drawer": "drawer_s3_garden"
+    }
+  },
+  {
+    "type": "input",
+    "tick": 5652,
+    "t": 47.1,
+    "moveX": -1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "action",
+    "tick": 5652,
+    "t": 47.1,
+    "action": "jump",
+    "params": {},
+    "result": {
+      "ok": true,
+      "vx": -4.4,
+      "vy": 6.6
+    }
+  },
+  {
+    "type": "input",
+    "tick": 5652,
+    "t": 47.1,
+    "moveX": 1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 5700,
+    "t": 47.5,
+    "moveX": 0,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 5724,
+    "t": 47.7,
+    "moveX": 1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 5736,
+    "t": 47.8,
+    "moveX": -1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 5748,
+    "t": 47.9,
+    "moveX": 1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 5760,
+    "t": 48,
+    "moveX": -1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 5772,
+    "t": 48.1,
+    "moveX": 1,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "input",
+    "tick": 5784,
+    "t": 48.2,
+    "moveX": 0,
+    "moveZ": 0,
+    "railPull": 0
+  },
+  {
+    "type": "action",
+    "tick": 5796,
+    "t": 48.3,
+    "action": "open_garden",
+    "params": {},
+    "result": {
+      "ok": true
+    }
+  }
+]

@@ -1,0 +1,1288 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "scope": "Publication metadata sanitation of three GLB models and three editable Blender source files; no rendering, scene redesign or gameplay modification.",
+  "blender_version": "5.2.2 LTS",
+  "glb_and_builder": [
+    {
+      "path": "assets/models/hero_drawer_proof.glb",
+      "sha256_before": "727beadb93a93376aa1093e947bf2d75627ffb5046eb8e782919935d2936805d",
+      "sha256_after": "727beadb93a93376aa1093e947bf2d75627ffb5046eb8e782919935d2936805d",
+      "changes": [],
+      "all_nonmetadata_json_identical": true,
+      "all_changes_limited_to_recorded_source_metadata": true,
+      "non_json_chunks_identical": true,
+      "non_json_chunks": [
+        {
+          "type": 5130562,
+          "sha256": "7860284b8d546fdd1a481bdf7e8fcac808e721bf479f1db958464419c743a0ae",
+          "bytes": 27331872
+        }
+      ],
+      "exporter_attribution": {
+        "generator": "Khronos glTF Blender I/O v5.2.40",
+        "version": "2.0"
+      }
+    },
+    {
+      "path": "assets/models/railway_hall.glb",
+      "sha256_before": "79784ee1ea6cfb87f83740acd017d3090642bd8884811e0e9190284844b768c4",
+      "sha256_after": "3b4027f6efe30dc923df57f786663815be24431360eee4cfe0ede72f278e88e9",
+      "changes": [
+        {
+          "path": "nodes/0/extras/source",
+          "value": "Authored geometry; procedural architectural material supplement"
+        },
+        {
+          "path": "nodes/1/extras/source",
+          "value": "Authored geometry; procedural architectural material supplement"
+        },
+        {
+          "path": "nodes/2/extras/source",
+          "value": "Authored geometry; procedural architectural material supplement"
+        },
+        {
+          "path": "nodes/3/extras/source",
+          "value": "Authored geometry; procedural architectural material supplement"
+        },
+        {
+          "path": "nodes/4/extras/source",
+          "value": "Authored geometry; procedural architectural material supplement"
+        },
+        {
+          "path": "nodes/5/extras/source",
+          "value": "Authored geometry; procedural architectural material supplement"
+        },
+        {
+          "path": "nodes/6/extras/source",
+          "value": "Authored geometry; procedural architectural material supplement"
+        },
+        {
+          "path": "nodes/7/extras/source",
+          "value": "Authored geometry; procedural architectural material supplement"
+        },
+        {
+          "path": "nodes/8/extras/source",
+          "value": "Authored geometry; procedural architectural material supplement"
+        },
+        {
+          "path": "nodes/9/extras/source",
+          "value": "Authored geometry; procedural architectural material supplement"
+        },
+        {
+          "path": "nodes/10/extras/source",
+          "value": "Authored geometry; procedural architectural material supplement"
+        },
+        {
+          "path": "nodes/11/extras/source",
+          "value": "Authored geometry; procedural architectural material supplement"
+        }
+      ],
+      "all_nonmetadata_json_identical": true,
+      "all_changes_limited_to_recorded_source_metadata": true,
+      "non_json_chunks_identical": true,
+      "non_json_chunks": [
+        {
+          "type": 5130562,
+          "sha256": "9d6a6b081e13c09bc1174ef5d51844d3c16137702978cb5d286fe75973e8bf0e",
+          "bytes": 35704828
+        }
+      ],
+      "exporter_attribution": {
+        "generator": "Khronos glTF Blender I/O v5.2.40",
+        "version": "2.0"
+      }
+    },
+    {
+      "path": "assets/models/vertical_lost_and_found_kit.glb",
+      "sha256_before": "2f321d59c674eab5f9d37742449455575e4ea511442b8df687ba17d4fc62bae9",
+      "sha256_after": "2f321d59c674eab5f9d37742449455575e4ea511442b8df687ba17d4fc62bae9",
+      "changes": [],
+      "all_nonmetadata_json_identical": true,
+      "all_changes_limited_to_recorded_source_metadata": true,
+      "non_json_chunks_identical": true,
+      "non_json_chunks": [
+        {
+          "type": 5130562,
+          "sha256": "7492677f95e9b5990cfb485a1731fe8ab9cf0394778727183bf9c1632f192ca3",
+          "bytes": 31246176
+        }
+      ],
+      "exporter_attribution": {
+        "generator": "Khronos glTF Blender I/O v5.2.40",
+        "version": "2.0"
+      }
+    },
+    {
+      "path": "authoring/railway-hall/build_hall.py",
+      "sha256_before": "0c9a8763b713289aca97107a66cef2617cc69b5248d0551aa9c7ce23d7b7ac9c",
+      "sha256_after": "2d723aea719d06480c6d196fea5842244badb066170685a6bec0a18f185cbe66",
+      "change": "Only source metadata literal changed; geometry and material code unchanged."
+    }
+  ],
+  "blend_files": [
+    {
+      "path": "assets/blender/railway_hall.blend",
+      "sha256_before": "f97d464535c35d80d6b585ec9521f32609ac2558e075781235d6646a00374361",
+      "sha256_after": "e6df426a9fc2333fa6829f8f66403d25c28b0e7b371f02b62f25670368adc288",
+      "changes": [
+        {
+          "kind": "image_path",
+          "datablock": "hall_floor_0_colour",
+          "path": "//../../authoring/railway-hall/assets/textures/hall_floor_0_colour.png"
+        },
+        {
+          "kind": "packed_image_path",
+          "datablock": "hall_floor_0_colour",
+          "path": "//../../authoring/railway-hall/assets/textures/hall_floor_0_colour.png"
+        },
+        {
+          "kind": "image_path",
+          "datablock": "hall_floor_1_colour",
+          "path": "//../../authoring/railway-hall/assets/textures/hall_floor_1_colour.png"
+        },
+        {
+          "kind": "packed_image_path",
+          "datablock": "hall_floor_1_colour",
+          "path": "//../../authoring/railway-hall/assets/textures/hall_floor_1_colour.png"
+        },
+        {
+          "kind": "image_path",
+          "datablock": "hall_floor_2_colour",
+          "path": "//../../authoring/railway-hall/assets/textures/hall_floor_2_colour.png"
+        },
+        {
+          "kind": "packed_image_path",
+          "datablock": "hall_floor_2_colour",
+          "path": "//../../authoring/railway-hall/assets/textures/hall_floor_2_colour.png"
+        },
+        {
+          "kind": "image_path",
+          "datablock": "hall_painted_iron_colour",
+          "path": "//../../authoring/railway-hall/assets/textures/hall_painted_iron_colour.png"
+        },
+        {
+          "kind": "packed_image_path",
+          "datablock": "hall_painted_iron_colour",
+          "path": "//../../authoring/railway-hall/assets/textures/hall_painted_iron_colour.png"
+        },
+        {
+          "kind": "image_path",
+          "datablock": "hall_recessed_brick_colour",
+          "path": "//../../authoring/railway-hall/assets/textures/hall_recessed_brick_colour.png"
+        },
+        {
+          "kind": "packed_image_path",
+          "datablock": "hall_recessed_brick_colour",
+          "path": "//../../authoring/railway-hall/assets/textures/hall_recessed_brick_colour.png"
+        },
+        {
+          "kind": "image_path",
+          "datablock": "hall_warm_limestone_colour",
+          "path": "//../../authoring/railway-hall/assets/textures/hall_warm_limestone_colour.png"
+        },
+        {
+          "kind": "packed_image_path",
+          "datablock": "hall_warm_limestone_colour",
+          "path": "//../../authoring/railway-hall/assets/textures/hall_warm_limestone_colour.png"
+        },
+        {
+          "kind": "image_path",
+          "datablock": "hall_warm_mahogany_colour",
+          "path": "//../../authoring/railway-hall/assets/textures/hall_warm_mahogany_colour.png"
+        },
+        {
+          "kind": "packed_image_path",
+          "datablock": "hall_warm_mahogany_colour",
+          "path": "//../../authoring/railway-hall/assets/textures/hall_warm_mahogany_colour.png"
+        },
+        {
+          "kind": "image_path",
+          "datablock": "handled_lacquer_basecolor.png",
+          "path": "//../textures/pbr/handled_lacquer_basecolor.png"
+        },
+        {
+          "kind": "packed_image_path",
+          "datablock": "handled_lacquer_basecolor.png",
+          "path": "//../textures/pbr/handled_lacquer_basecolor.png"
+        },
+        {
+          "kind": "image_path",
+          "datablock": "handled_lacquer_metalness.png",
+          "path": "//../textures/pbr/handled_lacquer_metalness.png"
+        },
+        {
+          "kind": "packed_image_path",
+          "datablock": "handled_lacquer_metalness.png",
+          "path": "//../textures/pbr/handled_lacquer_metalness.png"
+        },
+        {
+          "kind": "image_path",
+          "datablock": "handled_lacquer_normal.png",
+          "path": "//../textures/pbr/handled_lacquer_normal.png"
+        },
+        {
+          "kind": "packed_image_path",
+          "datablock": "handled_lacquer_normal.png",
+          "path": "//../textures/pbr/handled_lacquer_normal.png"
+        },
+        {
+          "kind": "image_path",
+          "datablock": "handled_lacquer_roughness.png",
+          "path": "//../textures/pbr/handled_lacquer_roughness.png"
+        },
+        {
+          "kind": "packed_image_path",
+          "datablock": "handled_lacquer_roughness.png",
+          "path": "//../textures/pbr/handled_lacquer_roughness.png"
+        },
+        {
+          "kind": "source_metadata",
+          "datablock": "hall_deep_recess",
+          "property": "source",
+          "replacement": "Authored geometry; procedural architectural material supplement"
+        },
+        {
+          "kind": "source_metadata",
+          "datablock": "hall_floor_0",
+          "property": "source",
+          "replacement": "Authored geometry; procedural architectural material supplement"
+        },
+        {
+          "kind": "source_metadata",
+          "datablock": "hall_floor_1",
+          "property": "source",
+          "replacement": "Authored geometry; procedural architectural material supplement"
+        },
+        {
+          "kind": "source_metadata",
+          "datablock": "hall_floor_2",
+          "property": "source",
+          "replacement": "Authored geometry; procedural architectural material supplement"
+        },
+        {
+          "kind": "source_metadata",
+          "datablock": "hall_glass_no_opaque_shadow",
+          "property": "source",
+          "replacement": "Authored geometry; procedural architectural material supplement"
+        },
+        {
+          "kind": "source_metadata",
+          "datablock": "hall_iron_edge_mouldings",
+          "property": "source",
+          "replacement": "Authored geometry; procedural architectural material supplement"
+        },
+        {
+          "kind": "source_metadata",
+          "datablock": "hall_painted_iron",
+          "property": "source",
+          "replacement": "Authored geometry; procedural architectural material supplement"
+        },
+        {
+          "kind": "source_metadata",
+          "datablock": "hall_recessed_brick",
+          "property": "source",
+          "replacement": "Authored geometry; procedural architectural material supplement"
+        },
+        {
+          "kind": "source_metadata",
+          "datablock": "hall_restrained_brass",
+          "property": "source",
+          "replacement": "Authored geometry; procedural architectural material supplement"
+        },
+        {
+          "kind": "source_metadata",
+          "datablock": "hall_warm_limestone",
+          "property": "source",
+          "replacement": "Authored geometry; procedural architectural material supplement"
+        },
+        {
+          "kind": "source_metadata",
+          "datablock": "hall_warm_mahogany",
+          "property": "source",
+          "replacement": "Authored geometry; procedural architectural material supplement"
+        },
+        {
+          "kind": "source_metadata",
+          "datablock": "hall_wood_recess",
+          "property": "source",
+          "replacement": "Authored geometry; procedural architectural material supplement"
+        },
+        {
+          "kind": "render_output",
+          "datablock": "Scene",
+          "path": "//../../renders/blender/railway_hall.png"
+        },
+        {
+          "kind": "editor_directory",
+          "screen": "Shading",
+          "path": "//"
+        }
+      ],
+      "fingerprints_before": {
+        "geometry": "036a303bedd33f8b55eaa201f0be476fd9f5d9c39772ae7b112f2782840f6002",
+        "materials": "1823ded9a8e58e21537f21ac986582f7ec1fce160404507dabe0455d579a7dd0",
+        "objects": "3d9d01bfed3496ffbdd8eefbdf38cf489b3421554baea513de7806f1555306f6",
+        "images": "5d68e713c64fec2ed24ec12c901b9f145d845526e0eb528774443dbdd78c996f",
+        "scene_lighting_camera": "7712df565580ba1270bfffda3dfc776c28f7e4dac8618bdff52235d59a3b26fd"
+      },
+      "fingerprints_after_reload": {
+        "geometry": "036a303bedd33f8b55eaa201f0be476fd9f5d9c39772ae7b112f2782840f6002",
+        "materials": "1823ded9a8e58e21537f21ac986582f7ec1fce160404507dabe0455d579a7dd0",
+        "objects": "3d9d01bfed3496ffbdd8eefbdf38cf489b3421554baea513de7806f1555306f6",
+        "images": "5d68e713c64fec2ed24ec12c901b9f145d845526e0eb528774443dbdd78c996f",
+        "scene_lighting_camera": "7712df565580ba1270bfffda3dfc776c28f7e4dac8618bdff52235d59a3b26fd"
+      },
+      "geometry_materials_objects_images_lighting_camera_unchanged": true,
+      "packed_image_count": 11,
+      "all_image_paths_resolve_inside_project": true,
+      "unresolved": [],
+      "scope": "CPU-only Blender metadata edit and saved-file reload. Geometry, object transforms, shader properties and links, lighting/camera settings, decoded image pixels and packed image bytes are fingerprinted. No rendering or visual acceptance claim."
+    },
+    {
+      "path": "assets/blender/vertical_lost_and_found.blend",
+      "sha256_before": "1b4aee983fc33d7e4aabd29a70b7f5127fb786eb6225b1da33e7370fb409cedc",
+      "sha256_after": "e33a9e66d84f64e47199f74cefa704ace781a144bf2b2e8dd4763a51c2d874c6",
+      "changes": [
+        {
+          "kind": "image_path",
+          "datablock": "handled_lacquer_basecolor.png",
+          "path": "//../textures/pbr/handled_lacquer_basecolor.png"
+        },
+        {
+          "kind": "packed_image_path",
+          "datablock": "handled_lacquer_basecolor.png",
+          "path": "//../textures/pbr/handled_lacquer_basecolor.png"
+        },
+        {
+          "kind": "image_path",
+          "datablock": "handled_lacquer_metalness.png",
+          "path": "//../textures/pbr/handled_lacquer_metalness.png"
+        },
+        {
+          "kind": "packed_image_path",
+          "datablock": "handled_lacquer_metalness.png",
+          "path": "//../textures/pbr/handled_lacquer_metalness.png"
+        },
+        {
+          "kind": "image_path",
+          "datablock": "handled_lacquer_normal.png",
+          "path": "//../textures/pbr/handled_lacquer_normal.png"
+        },
+        {
+          "kind": "packed_image_path",
+          "datablock": "handled_lacquer_normal.png",
+          "path": "//../textures/pbr/handled_lacquer_normal.png"
+        },
+        {
+          "kind": "image_path",
+          "datablock": "handled_lacquer_roughness.png",
+          "path": "//../textures/pbr/handled_lacquer_roughness.png"
+        },
+        {
+          "kind": "packed_image_path",
+          "datablock": "handled_lacquer_roughness.png",
+          "path": "//../textures/pbr/handled_lacquer_roughness.png"
+        },
+        {
+          "kind": "image_path",
+          "datablock": "label_payload_carpet_02_basecolor.png",
+          "path": "//../textures/pbr/label_payload_carpet_02_basecolor.png"
+        },
+        {
+          "kind": "packed_image_path",
+          "datablock": "label_payload_carpet_02_basecolor.png",
+          "path": "//../textures/pbr/label_payload_carpet_02_basecolor.png"
+        },
+        {
+          "kind": "image_path",
+          "datablock": "label_payload_carpet_02_metalness.png",
+          "path": "//../textures/pbr/label_payload_carpet_02_metalness.png"
+        },
+        {
+          "kind": "packed_image_path",
+          "datablock": "label_payload_carpet_02_metalness.png",
+          "path": "//../textures/pbr/label_payload_carpet_02_metalness.png"
+        },
+        {
+          "kind": "image_path",
+          "datablock": "label_payload_carpet_02_normal.png",
+          "path": "//../textures/pbr/label_payload_carpet_02_normal.png"
+        },
+        {
+          "kind": "packed_image_path",
+          "datablock": "label_payload_carpet_02_normal.png",
+          "path": "//../textures/pbr/label_payload_carpet_02_normal.png"
+        },
+        {
+          "kind": "image_path",
+          "datablock": "label_payload_carpet_02_roughness.png",
+          "path": "//../textures/pbr/label_payload_carpet_02_roughness.png"
+        },
+        {
+          "kind": "packed_image_path",
+          "datablock": "label_payload_carpet_02_roughness.png",
+          "path": "//../textures/pbr/label_payload_carpet_02_roughness.png"
+        },
+        {
+          "kind": "image_path",
+          "datablock": "label_payload_ceramic_03_basecolor.png",
+          "path": "//../textures/pbr/label_payload_ceramic_03_basecolor.png"
+        },
+        {
+          "kind": "packed_image_path",
+          "datablock": "label_payload_ceramic_03_basecolor.png",
+          "path": "//../textures/pbr/label_payload_ceramic_03_basecolor.png"
+        },
+        {
+          "kind": "image_path",
+          "datablock": "label_payload_ceramic_03_metalness.png",
+          "path": "//../textures/pbr/label_payload_ceramic_03_metalness.png"
+        },
+        {
+          "kind": "packed_image_path",
+          "datablock": "label_payload_ceramic_03_metalness.png",
+          "path": "//../textures/pbr/label_payload_ceramic_03_metalness.png"
+        },
+        {
+          "kind": "image_path",
+          "datablock": "label_payload_ceramic_03_normal.png",
+          "path": "//../textures/pbr/label_payload_ceramic_03_normal.png"
+        },
+        {
+          "kind": "packed_image_path",
+          "datablock": "label_payload_ceramic_03_normal.png",
+          "path": "//../textures/pbr/label_payload_ceramic_03_normal.png"
+        },
+        {
+          "kind": "image_path",
+          "datablock": "label_payload_ceramic_03_roughness.png",
+          "path": "//../textures/pbr/label_payload_ceramic_03_roughness.png"
+        },
+        {
+          "kind": "packed_image_path",
+          "datablock": "label_payload_ceramic_03_roughness.png",
+          "path": "//../textures/pbr/label_payload_ceramic_03_roughness.png"
+        },
+        {
+          "kind": "image_path",
+          "datablock": "label_payload_instruments_05_basecolor.png",
+          "path": "//../textures/pbr/label_payload_instruments_05_basecolor.png"
+        },
+        {
+          "kind": "packed_image_path",
+          "datablock": "label_payload_instruments_05_basecolor.png",
+          "path": "//../textures/pbr/label_payload_instruments_05_basecolor.png"
+        },
+        {
+          "kind": "image_path",
+          "datablock": "label_payload_instruments_05_metalness.png",
+          "path": "//../textures/pbr/label_payload_instruments_05_metalness.png"
+        },
+        {
+          "kind": "packed_image_path",
+          "datablock": "label_payload_instruments_05_metalness.png",
+          "path": "//../textures/pbr/label_payload_instruments_05_metalness.png"
+        },
+        {
+          "kind": "image_path",
+          "datablock": "label_payload_instruments_05_normal.png",
+          "path": "//../textures/pbr/label_payload_instruments_05_normal.png"
+        },
+        {
+          "kind": "packed_image_path",
+          "datablock": "label_payload_instruments_05_normal.png",
+          "path": "//../textures/pbr/label_payload_instruments_05_normal.png"
+        },
+        {
+          "kind": "image_path",
+          "datablock": "label_payload_instruments_05_roughness.png",
+          "path": "//../textures/pbr/label_payload_instruments_05_roughness.png"
+        },
+        {
+          "kind": "packed_image_path",
+          "datablock": "label_payload_instruments_05_roughness.png",
+          "path": "//../textures/pbr/label_payload_instruments_05_roughness.png"
+        },
+        {
+          "kind": "image_path",
+          "datablock": "label_payload_trunk_01_basecolor.png",
+          "path": "//../textures/pbr/label_payload_trunk_01_basecolor.png"
+        },
+        {
+          "kind": "packed_image_path",
+          "datablock": "label_payload_trunk_01_basecolor.png",
+          "path": "//../textures/pbr/label_payload_trunk_01_basecolor.png"
+        },
+        {
+          "kind": "image_path",
+          "datablock": "label_payload_trunk_01_metalness.png",
+          "path": "//../textures/pbr/label_payload_trunk_01_metalness.png"
+        },
+        {
+          "kind": "packed_image_path",
+          "datablock": "label_payload_trunk_01_metalness.png",
+          "path": "//../textures/pbr/label_payload_trunk_01_metalness.png"
+        },
+        {
+          "kind": "image_path",
+          "datablock": "label_payload_trunk_01_normal.png",
+          "path": "//../textures/pbr/label_payload_trunk_01_normal.png"
+        },
+        {
+          "kind": "packed_image_path",
+          "datablock": "label_payload_trunk_01_normal.png",
+          "path": "//../textures/pbr/label_payload_trunk_01_normal.png"
+        },
+        {
+          "kind": "image_path",
+          "datablock": "label_payload_trunk_01_roughness.png",
+          "path": "//../textures/pbr/label_payload_trunk_01_roughness.png"
+        },
+        {
+          "kind": "packed_image_path",
+          "datablock": "label_payload_trunk_01_roughness.png",
+          "path": "//../textures/pbr/label_payload_trunk_01_roughness.png"
+        },
+        {
+          "kind": "image_path",
+          "datablock": "label_payload_umbrella_04_basecolor.png",
+          "path": "//../textures/pbr/label_payload_umbrella_04_basecolor.png"
+        },
+        {
+          "kind": "packed_image_path",
+          "datablock": "label_payload_umbrella_04_basecolor.png",
+          "path": "//../textures/pbr/label_payload_umbrella_04_basecolor.png"
+        },
+        {
+          "kind": "image_path",
+          "datablock": "label_payload_umbrella_04_metalness.png",
+          "path": "//../textures/pbr/label_payload_umbrella_04_metalness.png"
+        },
+        {
+          "kind": "packed_image_path",
+          "datablock": "label_payload_umbrella_04_metalness.png",
+          "path": "//../textures/pbr/label_payload_umbrella_04_metalness.png"
+        },
+        {
+          "kind": "image_path",
+          "datablock": "label_payload_umbrella_04_normal.png",
+          "path": "//../textures/pbr/label_payload_umbrella_04_normal.png"
+        },
+        {
+          "kind": "packed_image_path",
+          "datablock": "label_payload_umbrella_04_normal.png",
+          "path": "//../textures/pbr/label_payload_umbrella_04_normal.png"
+        },
+        {
+          "kind": "image_path",
+          "datablock": "label_payload_umbrella_04_roughness.png",
+          "path": "//../textures/pbr/label_payload_umbrella_04_roughness.png"
+        },
+        {
+          "kind": "packed_image_path",
+          "datablock": "label_payload_umbrella_04_roughness.png",
+          "path": "//../textures/pbr/label_payload_umbrella_04_roughness.png"
+        },
+        {
+          "kind": "image_path",
+          "datablock": "label_rolling_parcel_01_basecolor.png",
+          "path": "//../textures/pbr/label_rolling_parcel_01_basecolor.png"
+        },
+        {
+          "kind": "packed_image_path",
+          "datablock": "label_rolling_parcel_01_basecolor.png",
+          "path": "//../textures/pbr/label_rolling_parcel_01_basecolor.png"
+        },
+        {
+          "kind": "image_path",
+          "datablock": "label_rolling_parcel_01_metalness.png",
+          "path": "//../textures/pbr/label_rolling_parcel_01_metalness.png"
+        },
+        {
+          "kind": "packed_image_path",
+          "datablock": "label_rolling_parcel_01_metalness.png",
+          "path": "//../textures/pbr/label_rolling_parcel_01_metalness.png"
+        },
+        {
+          "kind": "image_path",
+          "datablock": "label_rolling_parcel_01_normal.png",
+          "path": "//../textures/pbr/label_rolling_parcel_01_normal.png"
+        },
+        {
+          "kind": "packed_image_path",
+          "datablock": "label_rolling_parcel_01_normal.png",
+          "path": "//../textures/pbr/label_rolling_parcel_01_normal.png"
+        },
+        {
+          "kind": "image_path",
+          "datablock": "label_rolling_parcel_01_roughness.png",
+          "path": "//../textures/pbr/label_rolling_parcel_01_roughness.png"
+        },
+        {
+          "kind": "packed_image_path",
+          "datablock": "label_rolling_parcel_01_roughness.png",
+          "path": "//../textures/pbr/label_rolling_parcel_01_roughness.png"
+        },
+        {
+          "kind": "image_path",
+          "datablock": "luggage_canvas_basecolor.png",
+          "path": "//../textures/pbr/luggage_canvas_basecolor.png"
+        },
+        {
+          "kind": "packed_image_path",
+          "datablock": "luggage_canvas_basecolor.png",
+          "path": "//../textures/pbr/luggage_canvas_basecolor.png"
+        },
+        {
+          "kind": "image_path",
+          "datablock": "luggage_canvas_metalness.png",
+          "path": "//../textures/pbr/luggage_canvas_metalness.png"
+        },
+        {
+          "kind": "packed_image_path",
+          "datablock": "luggage_canvas_metalness.png",
+          "path": "//../textures/pbr/luggage_canvas_metalness.png"
+        },
+        {
+          "kind": "image_path",
+          "datablock": "luggage_canvas_normal.png",
+          "path": "//../textures/pbr/luggage_canvas_normal.png"
+        },
+        {
+          "kind": "packed_image_path",
+          "datablock": "luggage_canvas_normal.png",
+          "path": "//../textures/pbr/luggage_canvas_normal.png"
+        },
+        {
+          "kind": "image_path",
+          "datablock": "luggage_canvas_roughness.png",
+          "path": "//../textures/pbr/luggage_canvas_roughness.png"
+        },
+        {
+          "kind": "packed_image_path",
+          "datablock": "luggage_canvas_roughness.png",
+          "path": "//../textures/pbr/luggage_canvas_roughness.png"
+        },
+        {
+          "kind": "image_path",
+          "datablock": "worn_lining_basecolor.png",
+          "path": "//../textures/pbr/worn_lining_basecolor.png"
+        },
+        {
+          "kind": "packed_image_path",
+          "datablock": "worn_lining_basecolor.png",
+          "path": "//../textures/pbr/worn_lining_basecolor.png"
+        },
+        {
+          "kind": "image_path",
+          "datablock": "worn_lining_metalness.png",
+          "path": "//../textures/pbr/worn_lining_metalness.png"
+        },
+        {
+          "kind": "packed_image_path",
+          "datablock": "worn_lining_metalness.png",
+          "path": "//../textures/pbr/worn_lining_metalness.png"
+        },
+        {
+          "kind": "image_path",
+          "datablock": "worn_lining_normal.png",
+          "path": "//../textures/pbr/worn_lining_normal.png"
+        },
+        {
+          "kind": "packed_image_path",
+          "datablock": "worn_lining_normal.png",
+          "path": "//../textures/pbr/worn_lining_normal.png"
+        },
+        {
+          "kind": "image_path",
+          "datablock": "worn_lining_roughness.png",
+          "path": "//../textures/pbr/worn_lining_roughness.png"
+        },
+        {
+          "kind": "packed_image_path",
+          "datablock": "worn_lining_roughness.png",
+          "path": "//../textures/pbr/worn_lining_roughness.png"
+        },
+        {
+          "kind": "render_output",
+          "datablock": "Scene",
+          "path": "//../../renders/blender/vertical_lost_and_found.png"
+        },
+        {
+          "kind": "editor_directory",
+          "screen": "Shading",
+          "path": "//"
+        }
+      ],
+      "fingerprints_before": {
+        "geometry": "e976c6f5a9991da6c7470f21738f508c25f4915222f46ebc61dcff01c924a500",
+        "materials": "4f6e06ab94fc2aec93ee764e5bcecbdb1578cb25fb2cf59deeaf073c8fb6610c",
+        "objects": "f0026c987d38193f85a0f534b64b593a262db62ea1a787fa582917daf8706ddd",
+        "images": "fae4528e93cd5b1577106bc32742564036446595faddf71e6aff7b455defc83f",
+        "scene_lighting_camera": "59cc80487a3669b5ce48e131c8f180a8859853b0ec1494ef610d38e9de0791ea"
+      },
+      "fingerprints_after_reload": {
+        "geometry": "e976c6f5a9991da6c7470f21738f508c25f4915222f46ebc61dcff01c924a500",
+        "materials": "4f6e06ab94fc2aec93ee764e5bcecbdb1578cb25fb2cf59deeaf073c8fb6610c",
+        "objects": "f0026c987d38193f85a0f534b64b593a262db62ea1a787fa582917daf8706ddd",
+        "images": "fae4528e93cd5b1577106bc32742564036446595faddf71e6aff7b455defc83f",
+        "scene_lighting_camera": "59cc80487a3669b5ce48e131c8f180a8859853b0ec1494ef610d38e9de0791ea"
+      },
+      "geometry_materials_objects_images_lighting_camera_unchanged": true,
+      "packed_image_count": 36,
+      "all_image_paths_resolve_inside_project": true,
+      "unresolved": [],
+      "scope": "CPU-only Blender metadata edit and saved-file reload. Geometry, object transforms, shader properties and links, lighting/camera settings, decoded image pixels and packed image bytes are fingerprinted. No rendering or visual acceptance claim."
+    },
+    {
+      "path": "assets/blender/hero_drawer_proof.blend",
+      "sha256_before": "46601799919d9a94243b460e56f3990832c4cda1d4246af1dd8004bb70cddd67",
+      "sha256_after": "846953fcb88ff9d533e4609d878c733730026e1d793a029788c04599b3c7708c",
+      "changes": [
+        {
+          "kind": "image_path",
+          "datablock": "handled_lacquer_basecolor.png",
+          "path": "//../textures/pbr/handled_lacquer_basecolor.png"
+        },
+        {
+          "kind": "packed_image_path",
+          "datablock": "handled_lacquer_basecolor.png",
+          "path": "//../textures/pbr/handled_lacquer_basecolor.png"
+        },
+        {
+          "kind": "image_path",
+          "datablock": "handled_lacquer_metalness.png",
+          "path": "//../textures/pbr/handled_lacquer_metalness.png"
+        },
+        {
+          "kind": "packed_image_path",
+          "datablock": "handled_lacquer_metalness.png",
+          "path": "//../textures/pbr/handled_lacquer_metalness.png"
+        },
+        {
+          "kind": "image_path",
+          "datablock": "handled_lacquer_normal.png",
+          "path": "//../textures/pbr/handled_lacquer_normal.png"
+        },
+        {
+          "kind": "packed_image_path",
+          "datablock": "handled_lacquer_normal.png",
+          "path": "//../textures/pbr/handled_lacquer_normal.png"
+        },
+        {
+          "kind": "image_path",
+          "datablock": "handled_lacquer_roughness.png",
+          "path": "//../textures/pbr/handled_lacquer_roughness.png"
+        },
+        {
+          "kind": "packed_image_path",
+          "datablock": "handled_lacquer_roughness.png",
+          "path": "//../textures/pbr/handled_lacquer_roughness.png"
+        },
+        {
+          "kind": "preserve_packed_image_datablock",
+          "datablock": "label_payload_carpet_02_basecolor.png",
+          "retained_for_editing": true
+        },
+        {
+          "kind": "image_path",
+          "datablock": "label_payload_carpet_02_basecolor.png",
+          "path": "//../textures/pbr/label_payload_carpet_02_basecolor.png"
+        },
+        {
+          "kind": "packed_image_path",
+          "datablock": "label_payload_carpet_02_basecolor.png",
+          "path": "//../textures/pbr/label_payload_carpet_02_basecolor.png"
+        },
+        {
+          "kind": "preserve_packed_image_datablock",
+          "datablock": "label_payload_carpet_02_metalness.png",
+          "retained_for_editing": true
+        },
+        {
+          "kind": "image_path",
+          "datablock": "label_payload_carpet_02_metalness.png",
+          "path": "//../textures/pbr/label_payload_carpet_02_metalness.png"
+        },
+        {
+          "kind": "packed_image_path",
+          "datablock": "label_payload_carpet_02_metalness.png",
+          "path": "//../textures/pbr/label_payload_carpet_02_metalness.png"
+        },
+        {
+          "kind": "preserve_packed_image_datablock",
+          "datablock": "label_payload_carpet_02_normal.png",
+          "retained_for_editing": true
+        },
+        {
+          "kind": "image_path",
+          "datablock": "label_payload_carpet_02_normal.png",
+          "path": "//../textures/pbr/label_payload_carpet_02_normal.png"
+        },
+        {
+          "kind": "packed_image_path",
+          "datablock": "label_payload_carpet_02_normal.png",
+          "path": "//../textures/pbr/label_payload_carpet_02_normal.png"
+        },
+        {
+          "kind": "preserve_packed_image_datablock",
+          "datablock": "label_payload_carpet_02_roughness.png",
+          "retained_for_editing": true
+        },
+        {
+          "kind": "image_path",
+          "datablock": "label_payload_carpet_02_roughness.png",
+          "path": "//../textures/pbr/label_payload_carpet_02_roughness.png"
+        },
+        {
+          "kind": "packed_image_path",
+          "datablock": "label_payload_carpet_02_roughness.png",
+          "path": "//../textures/pbr/label_payload_carpet_02_roughness.png"
+        },
+        {
+          "kind": "preserve_packed_image_datablock",
+          "datablock": "label_payload_ceramic_03_basecolor.png",
+          "retained_for_editing": true
+        },
+        {
+          "kind": "image_path",
+          "datablock": "label_payload_ceramic_03_basecolor.png",
+          "path": "//../textures/pbr/label_payload_ceramic_03_basecolor.png"
+        },
+        {
+          "kind": "packed_image_path",
+          "datablock": "label_payload_ceramic_03_basecolor.png",
+          "path": "//../textures/pbr/label_payload_ceramic_03_basecolor.png"
+        },
+        {
+          "kind": "preserve_packed_image_datablock",
+          "datablock": "label_payload_ceramic_03_metalness.png",
+          "retained_for_editing": true
+        },
+        {
+          "kind": "image_path",
+          "datablock": "label_payload_ceramic_03_metalness.png",
+          "path": "//../textures/pbr/label_payload_ceramic_03_metalness.png"
+        },
+        {
+          "kind": "packed_image_path",
+          "datablock": "label_payload_ceramic_03_metalness.png",
+          "path": "//../textures/pbr/label_payload_ceramic_03_metalness.png"
+        },
+        {
+          "kind": "preserve_packed_image_datablock",
+          "datablock": "label_payload_ceramic_03_normal.png",
+          "retained_for_editing": true
+        },
+        {
+          "kind": "image_path",
+          "datablock": "label_payload_ceramic_03_normal.png",
+          "path": "//../textures/pbr/label_payload_ceramic_03_normal.png"
+        },
+        {
+          "kind": "packed_image_path",
+          "datablock": "label_payload_ceramic_03_normal.png",
+          "path": "//../textures/pbr/label_payload_ceramic_03_normal.png"
+        },
+        {
+          "kind": "preserve_packed_image_datablock",
+          "datablock": "label_payload_ceramic_03_roughness.png",
+          "retained_for_editing": true
+        },
+        {
+          "kind": "image_path",
+          "datablock": "label_payload_ceramic_03_roughness.png",
+          "path": "//../textures/pbr/label_payload_ceramic_03_roughness.png"
+        },
+        {
+          "kind": "packed_image_path",
+          "datablock": "label_payload_ceramic_03_roughness.png",
+          "path": "//../textures/pbr/label_payload_ceramic_03_roughness.png"
+        },
+        {
+          "kind": "preserve_packed_image_datablock",
+          "datablock": "label_payload_instruments_05_basecolor.png",
+          "retained_for_editing": true
+        },
+        {
+          "kind": "image_path",
+          "datablock": "label_payload_instruments_05_basecolor.png",
+          "path": "//../textures/pbr/label_payload_instruments_05_basecolor.png"
+        },
+        {
+          "kind": "packed_image_path",
+          "datablock": "label_payload_instruments_05_basecolor.png",
+          "path": "//../textures/pbr/label_payload_instruments_05_basecolor.png"
+        },
+        {
+          "kind": "preserve_packed_image_datablock",
+          "datablock": "label_payload_instruments_05_metalness.png",
+          "retained_for_editing": true
+        },
+        {
+          "kind": "image_path",
+          "datablock": "label_payload_instruments_05_metalness.png",
+          "path": "//../textures/pbr/label_payload_instruments_05_metalness.png"
+        },
+        {
+          "kind": "packed_image_path",
+          "datablock": "label_payload_instruments_05_metalness.png",
+          "path": "//../textures/pbr/label_payload_instruments_05_metalness.png"
+        },
+        {
+          "kind": "preserve_packed_image_datablock",
+          "datablock": "label_payload_instruments_05_normal.png",
+          "retained_for_editing": true
+        },
+        {
+          "kind": "image_path",
+          "datablock": "label_payload_instruments_05_normal.png",
+          "path": "//../textures/pbr/label_payload_instruments_05_normal.png"
+        },
+        {
+          "kind": "packed_image_path",
+          "datablock": "label_payload_instruments_05_normal.png",
+          "path": "//../textures/pbr/label_payload_instruments_05_normal.png"
+        },
+        {
+          "kind": "preserve_packed_image_datablock",
+          "datablock": "label_payload_instruments_05_roughness.png",
+          "retained_for_editing": true
+        },
+        {
+          "kind": "image_path",
+          "datablock": "label_payload_instruments_05_roughness.png",
+          "path": "//../textures/pbr/label_payload_instruments_05_roughness.png"
+        },
+        {
+          "kind": "packed_image_path",
+          "datablock": "label_payload_instruments_05_roughness.png",
+          "path": "//../textures/pbr/label_payload_instruments_05_roughness.png"
+        },
+        {
+          "kind": "preserve_packed_image_datablock",
+          "datablock": "label_payload_trunk_01_basecolor.png",
+          "retained_for_editing": true
+        },
+        {
+          "kind": "image_path",
+          "datablock": "label_payload_trunk_01_basecolor.png",
+          "path": "//../textures/pbr/label_payload_trunk_01_basecolor.png"
+        },
+        {
+          "kind": "packed_image_path",
+          "datablock": "label_payload_trunk_01_basecolor.png",
+          "path": "//../textures/pbr/label_payload_trunk_01_basecolor.png"
+        },
+        {
+          "kind": "preserve_packed_image_datablock",
+          "datablock": "label_payload_trunk_01_metalness.png",
+          "retained_for_editing": true
+        },
+        {
+          "kind": "image_path",
+          "datablock": "label_payload_trunk_01_metalness.png",
+          "path": "//../textures/pbr/label_payload_trunk_01_metalness.png"
+        },
+        {
+          "kind": "packed_image_path",
+          "datablock": "label_payload_trunk_01_metalness.png",
+          "path": "//../textures/pbr/label_payload_trunk_01_metalness.png"
+        },
+        {
+          "kind": "preserve_packed_image_datablock",
+          "datablock": "label_payload_trunk_01_normal.png",
+          "retained_for_editing": true
+        },
+        {
+          "kind": "image_path",
+          "datablock": "label_payload_trunk_01_normal.png",
+          "path": "//../textures/pbr/label_payload_trunk_01_normal.png"
+        },
+        {
+          "kind": "packed_image_path",
+          "datablock": "label_payload_trunk_01_normal.png",
+          "path": "//../textures/pbr/label_payload_trunk_01_normal.png"
+        },
+        {
+          "kind": "preserve_packed_image_datablock",
+          "datablock": "label_payload_trunk_01_roughness.png",
+          "retained_for_editing": true
+        },
+        {
+          "kind": "image_path",
+          "datablock": "label_payload_trunk_01_roughness.png",
+          "path": "//../textures/pbr/label_payload_trunk_01_roughness.png"
+        },
+        {
+          "kind": "packed_image_path",
+          "datablock": "label_payload_trunk_01_roughness.png",
+          "path": "//../textures/pbr/label_payload_trunk_01_roughness.png"
+        },
+        {
+          "kind": "preserve_packed_image_datablock",
+          "datablock": "label_payload_umbrella_04_basecolor.png",
+          "retained_for_editing": true
+        },
+        {
+          "kind": "image_path",
+          "datablock": "label_payload_umbrella_04_basecolor.png",
+          "path": "//../textures/pbr/label_payload_umbrella_04_basecolor.png"
+        },
+        {
+          "kind": "packed_image_path",
+          "datablock": "label_payload_umbrella_04_basecolor.png",
+          "path": "//../textures/pbr/label_payload_umbrella_04_basecolor.png"
+        },
+        {
+          "kind": "preserve_packed_image_datablock",
+          "datablock": "label_payload_umbrella_04_metalness.png",
+          "retained_for_editing": true
+        },
+        {
+          "kind": "image_path",
+          "datablock": "label_payload_umbrella_04_metalness.png",
+          "path": "//../textures/pbr/label_payload_umbrella_04_metalness.png"
+        },
+        {
+          "kind": "packed_image_path",
+          "datablock": "label_payload_umbrella_04_metalness.png",
+          "path": "//../textures/pbr/label_payload_umbrella_04_metalness.png"
+        },
+        {
+          "kind": "preserve_packed_image_datablock",
+          "datablock": "label_payload_umbrella_04_normal.png",
+          "retained_for_editing": true
+        },
+        {
+          "kind": "image_path",
+          "datablock": "label_payload_umbrella_04_normal.png",
+          "path": "//../textures/pbr/label_payload_umbrella_04_normal.png"
+        },
+        {
+          "kind": "packed_image_path",
+          "datablock": "label_payload_umbrella_04_normal.png",
+          "path": "//../textures/pbr/label_payload_umbrella_04_normal.png"
+        },
+        {
+          "kind": "preserve_packed_image_datablock",
+          "datablock": "label_payload_umbrella_04_roughness.png",
+          "retained_for_editing": true
+        },
+        {
+          "kind": "image_path",
+          "datablock": "label_payload_umbrella_04_roughness.png",
+          "path": "//../textures/pbr/label_payload_umbrella_04_roughness.png"
+        },
+        {
+          "kind": "packed_image_path",
+          "datablock": "label_payload_umbrella_04_roughness.png",
+          "path": "//../textures/pbr/label_payload_umbrella_04_roughness.png"
+        },
+        {
+          "kind": "preserve_packed_image_datablock",
+          "datablock": "label_rolling_parcel_01_basecolor.png",
+          "retained_for_editing": true
+        },
+        {
+          "kind": "image_path",
+          "datablock": "label_rolling_parcel_01_basecolor.png",
+          "path": "//../textures/pbr/label_rolling_parcel_01_basecolor.png"
+        },
+        {
+          "kind": "packed_image_path",
+          "datablock": "label_rolling_parcel_01_basecolor.png",
+          "path": "//../textures/pbr/label_rolling_parcel_01_basecolor.png"
+        },
+        {
+          "kind": "preserve_packed_image_datablock",
+          "datablock": "label_rolling_parcel_01_metalness.png",
+          "retained_for_editing": true
+        },
+        {
+          "kind": "image_path",
+          "datablock": "label_rolling_parcel_01_metalness.png",
+          "path": "//../textures/pbr/label_rolling_parcel_01_metalness.png"
+        },
+        {
+          "kind": "packed_image_path",
+          "datablock": "label_rolling_parcel_01_metalness.png",
+          "path": "//../textures/pbr/label_rolling_parcel_01_metalness.png"
+        },
+        {
+          "kind": "preserve_packed_image_datablock",
+          "datablock": "label_rolling_parcel_01_normal.png",
+          "retained_for_editing": true
+        },
+        {
+          "kind": "image_path",
+          "datablock": "label_rolling_parcel_01_normal.png",
+          "path": "//../textures/pbr/label_rolling_parcel_01_normal.png"
+        },
+        {
+          "kind": "packed_image_path",
+          "datablock": "label_rolling_parcel_01_normal.png",
+          "path": "//../textures/pbr/label_rolling_parcel_01_normal.png"
+        },
+        {
+          "kind": "preserve_packed_image_datablock",
+          "datablock": "label_rolling_parcel_01_roughness.png",
+          "retained_for_editing": true
+        },
+        {
+          "kind": "image_path",
+          "datablock": "label_rolling_parcel_01_roughness.png",
+          "path": "//../textures/pbr/label_rolling_parcel_01_roughness.png"
+        },
+        {
+          "kind": "packed_image_path",
+          "datablock": "label_rolling_parcel_01_roughness.png",
+          "path": "//../textures/pbr/label_rolling_parcel_01_roughness.png"
+        },
+        {
+          "kind": "image_path",
+          "datablock": "luggage_canvas_basecolor.png",
+          "path": "//../textures/pbr/luggage_canvas_basecolor.png"
+        },
+        {
+          "kind": "packed_image_path",
+          "datablock": "luggage_canvas_basecolor.png",
+          "path": "//../textures/pbr/luggage_canvas_basecolor.png"
+        },
+        {
+          "kind": "image_path",
+          "datablock": "luggage_canvas_metalness.png",
+          "path": "//../textures/pbr/luggage_canvas_metalness.png"
+        },
+        {
+          "kind": "packed_image_path",
+          "datablock": "luggage_canvas_metalness.png",
+          "path": "//../textures/pbr/luggage_canvas_metalness.png"
+        },
+        {
+          "kind": "image_path",
+          "datablock": "luggage_canvas_normal.png",
+          "path": "//../textures/pbr/luggage_canvas_normal.png"
+        },
+        {
+          "kind": "packed_image_path",
+          "datablock": "luggage_canvas_normal.png",
+          "path": "//../textures/pbr/luggage_canvas_normal.png"
+        },
+        {
+          "kind": "image_path",
+          "datablock": "luggage_canvas_roughness.png",
+          "path": "//../textures/pbr/luggage_canvas_roughness.png"
+        },
+        {
+          "kind": "packed_image_path",
+          "datablock": "luggage_canvas_roughness.png",
+          "path": "//../textures/pbr/luggage_canvas_roughness.png"
+        },
+        {
+          "kind": "image_path",
+          "datablock": "worn_lining_basecolor.png",
+          "path": "//../textures/pbr/worn_lining_basecolor.png"
+        },
+        {
+          "kind": "packed_image_path",
+          "datablock": "worn_lining_basecolor.png",
+          "path": "//../textures/pbr/worn_lining_basecolor.png"
+        },
+        {
+          "kind": "image_path",
+          "datablock": "worn_lining_metalness.png",
+          "path": "//../textures/pbr/worn_lining_metalness.png"
+        },
+        {
+          "kind": "packed_image_path",
+          "datablock": "worn_lining_metalness.png",
+          "path": "//../textures/pbr/worn_lining_metalness.png"
+        },
+        {
+          "kind": "image_path",
+          "datablock": "worn_lining_normal.png",
+          "path": "//../textures/pbr/worn_lining_normal.png"
+        },
+        {
+          "kind": "packed_image_path",
+          "datablock": "worn_lining_normal.png",
+          "path": "//../textures/pbr/worn_lining_normal.png"
+        },
+        {
+          "kind": "image_path",
+          "datablock": "worn_lining_roughness.png",
+          "path": "//../textures/pbr/worn_lining_roughness.png"
+        },
+        {
+          "kind": "packed_image_path",
+          "datablock": "worn_lining_roughness.png",
+          "path": "//../textures/pbr/worn_lining_roughness.png"
+        },
+        {
+          "kind": "render_output",
+          "datablock": "Scene",
+          "path": "//../../renders/blender/hero_drawer_proof.png"
+        },
+        {
+          "kind": "editor_directory",
+          "screen": "Shading",
+          "path": "//"
+        }
+      ],
+      "fingerprints_before": {
+        "geometry": "938e84aa85ec5145afa52e40ecaf8c79e7440377257d480468bd25e273f74e0e",
+        "materials": "a3ae25361664fe139c7b2e0a1b7741ebaa8acf5bc6012f4a00876dffa2a0187e",
+        "objects": "d92e31ad0f9f2bd8e794d63e7e36dd6e578fed55256f0cb730130c673f810a69",
+        "images": "fae4528e93cd5b1577106bc32742564036446595faddf71e6aff7b455defc83f",
+        "scene_lighting_camera": "59cc80487a3669b5ce48e131c8f180a8859853b0ec1494ef610d38e9de0791ea"
+      },
+      "fingerprints_after_reload": {
+        "geometry": "938e84aa85ec5145afa52e40ecaf8c79e7440377257d480468bd25e273f74e0e",
+        "materials": "a3ae25361664fe139c7b2e0a1b7741ebaa8acf5bc6012f4a00876dffa2a0187e",
+        "objects": "d92e31ad0f9f2bd8e794d63e7e36dd6e578fed55256f0cb730130c673f810a69",
+        "images": "fae4528e93cd5b1577106bc32742564036446595faddf71e6aff7b455defc83f",
+        "scene_lighting_camera": "59cc80487a3669b5ce48e131c8f180a8859853b0ec1494ef610d38e9de0791ea"
+      },
+      "geometry_materials_objects_images_lighting_camera_unchanged": true,
+      "packed_image_count": 36,
+      "all_image_paths_resolve_inside_project": true,
+      "unresolved": [],
+      "scope": "CPU-only Blender metadata edit and saved-file reload. Geometry, object transforms, shader properties and links, lighting/camera settings, decoded image pixels and packed image bytes are fingerprinted. No rendering or visual acceptance claim."
+    }
+  ],
+  "decoded_blend_scan": [
+    {
+      "path": "assets/blender/vertical_lost_and_found.blend",
+      "zstd_frames_checked": 18,
+      "decoded_bytes": 31139510,
+      "known_private_path_or_byline_findings": 0
+    },
+    {
+      "path": "assets/blender/railway_hall.blend",
+      "zstd_frames_checked": 26,
+      "decoded_bytes": 33621882,
+      "known_private_path_or_byline_findings": 0
+    },
+    {
+      "path": "assets/blender/hero_drawer_proof.blend",
+      "zstd_frames_checked": 17,
+      "decoded_bytes": 29681006,
+      "known_private_path_or_byline_findings": 0
+    }
+  ],
+  "verification": {
+    "glb_binary_chunks_unchanged": true,
+    "glb_nonmetadata_json_unchanged": true,
+    "blender_geometry_materials_objects_lighting_camera_unchanged": true,
+    "decoded_and_packed_image_bytes_unchanged": true,
+    "image_paths_resolve_to_delivered_files": true,
+    "private_path_or_byline_findings": 0
+  },
+  "limitations": [
+    "Fingerprint equality covers the recorded data categories; this is not an independent visual review.",
+    "The binary scan checks printable strings for known private path, byline and staging-directory patterns; it does not establish absence of every possible private data format.",
+    "Metadata-only changes produce different file hashes. Earlier capture and verification hashes describe the original local production assets."
+  ]
+}

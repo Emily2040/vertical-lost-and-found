@@ -1,0 +1,295 @@
+{
+  "type": "object",
+  "required": [
+    "project",
+    "revision",
+    "units",
+    "coordinates",
+    "simulation",
+    "material_families",
+    "payload_catalog",
+    "interfaces"
+  ],
+  "properties": {
+    "project": {
+      "const": "vertical-lost-and-found"
+    },
+    "revision": {
+      "type": "string",
+      "minLength": 1
+    },
+    "units": {
+      "type": "object",
+      "required": [
+        "length",
+        "mass",
+        "time"
+      ],
+      "properties": {
+        "length": {
+          "const": "m"
+        },
+        "mass": {
+          "const": "kg"
+        },
+        "time": {
+          "const": "s"
+        }
+      }
+    },
+    "simulation": {
+      "type": "object",
+      "required": [
+        "fixed_dt_s",
+        "gravity_mps2",
+        "player_mass_kg"
+      ],
+      "properties": {
+        "fixed_dt_s": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "gravity_mps2": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "player_mass_kg": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "player_radius_m": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "player_height_m": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "player_walk_speed_mps": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "player_jump_speed_mps": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "rail_notch_tolerance_m": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "interaction_reach_m": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        }
+      }
+    },
+    "material_families": {
+      "type": "array",
+      "minItems": 3,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "channels",
+          "color_spaces"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "channels": {
+            "type": "array",
+            "minItems": 4,
+            "uniqueItems": true,
+            "items": {
+              "enum": [
+                "baseColor",
+                "roughness",
+                "metalness",
+                "normal"
+              ]
+            }
+          },
+          "required_resolution_px": {
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 2,
+            "items": {
+              "type": "integer",
+              "minimum": 2048
+            }
+          },
+          "color_spaces": {
+            "type": "object",
+            "required": [
+              "baseColor",
+              "roughness",
+              "metalness",
+              "normal"
+            ],
+            "properties": {
+              "baseColor": {
+                "const": "sRGB"
+              },
+              "roughness": {
+                "enum": [
+                  "Linear",
+                  "Non-Color"
+                ]
+              },
+              "metalness": {
+                "enum": [
+                  "Linear",
+                  "Non-Color"
+                ]
+              },
+              "normal": {
+                "enum": [
+                  "Linear",
+                  "Non-Color"
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "payload_catalog": {
+      "type": "array",
+      "minItems": 6,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "mesh_id",
+          "label",
+          "mass_kg"
+        ],
+        "properties": {
+          "mass_kg": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          }
+        }
+      }
+    },
+    "interfaces": {
+      "type": "object",
+      "required": [
+        "showcase"
+      ],
+      "properties": {
+        "showcase": {
+          "type": "object",
+          "required": [
+            "output_path",
+            "width",
+            "height",
+            "fps",
+            "duration_s",
+            "total_frames",
+            "video_codec",
+            "pixel_format",
+            "color_space",
+            "audio_codec",
+            "audio_sample_rate_hz",
+            "audio_channels",
+            "true_peak_ceiling_dbtp"
+          ],
+          "properties": {
+            "output_path": {
+              "const": "showcase-1080p60.mp4"
+            },
+            "width": {
+              "const": 1920
+            },
+            "height": {
+              "const": 1080
+            },
+            "fps": {
+              "const": 60
+            },
+            "duration_s": {
+              "const": 60.0
+            },
+            "total_frames": {
+              "const": 3600
+            },
+            "video_codec": {
+              "const": "h264"
+            },
+            "pixel_format": {
+              "const": "yuv420p"
+            },
+            "color_space": {
+              "const": "bt709"
+            },
+            "audio_codec": {
+              "const": "aac"
+            },
+            "audio_sample_rate_hz": {
+              "const": 48000
+            },
+            "audio_channels": {
+              "const": 2
+            },
+            "true_peak_ceiling_dbtp": {
+              "const": -1.0
+            }
+          }
+        }
+      }
+    },
+    "coordinates": {
+      "type": "object",
+      "required": [
+        "blender",
+        "runtime_threejs",
+        "gltf_export_yup",
+        "transform_tolerance_m"
+      ],
+      "properties": {
+        "gltf_export_yup": {
+          "const": true
+        },
+        "transform_tolerance_m": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "blender": {
+          "type": "object",
+          "required": [
+            "up",
+            "handedness"
+          ],
+          "properties": {
+            "up": {
+              "const": "+Z"
+            },
+            "handedness": {
+              "const": "right"
+            }
+          }
+        },
+        "runtime_threejs": {
+          "type": "object",
+          "required": [
+            "up",
+            "handedness"
+          ],
+          "properties": {
+            "up": {
+              "const": "+Y"
+            },
+            "handedness": {
+              "const": "right"
+            }
+          }
+        }
+      }
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Vertical Lost & Found contract record"
+}

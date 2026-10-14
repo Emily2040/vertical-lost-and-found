@@ -1,0 +1,320 @@
+{
+  "checked_at": "2026-10-14T21:40:10.025514+00:00",
+  "install": "npm ci --no-audit --no-fund",
+  "build_passed": true,
+  "mechanics_passed": true,
+  "mechanics_check_count": 77,
+  "ordinary_routes_completed": 4,
+  "checks": [
+    {
+      "id": "ordinary_input_surface",
+      "passed": true
+    },
+    {
+      "id": "human_action_spacing",
+      "passed": true
+    },
+    {
+      "id": "coarse_decision_rate",
+      "passed": true
+    },
+    {
+      "id": "route_source_binding",
+      "passed": true
+    },
+    {
+      "id": "coarse_sensitivity_sensitivity-80-",
+      "passed": true
+    },
+    {
+      "id": "coarse_sensitivity_sensitivity-120-",
+      "passed": true
+    },
+    {
+      "id": "jump_landing_margin",
+      "passed": true
+    },
+    {
+      "id": "complete_route_30",
+      "passed": true
+    },
+    {
+      "id": "mass_ownership_30",
+      "passed": true
+    },
+    {
+      "id": "downhill_chute_30",
+      "passed": true
+    },
+    {
+      "id": "complete_route_60",
+      "passed": true
+    },
+    {
+      "id": "mass_ownership_60",
+      "passed": true
+    },
+    {
+      "id": "downhill_chute_60",
+      "passed": true
+    },
+    {
+      "id": "complete_route_120",
+      "passed": true
+    },
+    {
+      "id": "mass_ownership_120",
+      "passed": true
+    },
+    {
+      "id": "downhill_chute_120",
+      "passed": true
+    },
+    {
+      "id": "render_rate_identity",
+      "passed": true
+    },
+    {
+      "id": "ordered_stages",
+      "passed": true
+    },
+    {
+      "id": "failure_and_retry",
+      "passed": true
+    },
+    {
+      "id": "counterexample_no_rail",
+      "passed": true
+    },
+    {
+      "id": "counterexample_no_cargo",
+      "passed": true
+    },
+    {
+      "id": "counterexample_no_latch",
+      "passed": true
+    },
+    {
+      "id": "world_entity_references",
+      "passed": true
+    },
+    {
+      "id": "cage_metadata_runtime_alignment",
+      "passed": true
+    },
+    {
+      "id": "chute_metadata_runtime_alignment",
+      "passed": true
+    },
+    {
+      "id": "jump_only_barrier",
+      "passed": true
+    },
+    {
+      "id": "no_climbable_counterweight_bridge",
+      "passed": true
+    },
+    {
+      "id": "gravity_chute_geometry",
+      "passed": true
+    },
+    {
+      "id": "rope_geometry",
+      "passed": true
+    },
+    {
+      "id": "contract_motion",
+      "passed": true
+    },
+    {
+      "id": "late_boarding_envelope",
+      "passed": true
+    },
+    {
+      "id": "showcase_valid_ordinary_route",
+      "passed": true
+    },
+    {
+      "id": "independent_frame_spikes",
+      "passed": true
+    },
+    {
+      "id": "independent_frame_clamp",
+      "passed": true
+    },
+    {
+      "id": "independent_balanced_stage2",
+      "passed": true
+    },
+    {
+      "id": "independent_unbalanced_stage2_-1",
+      "passed": true
+    },
+    {
+      "id": "independent_unbalanced_stage2_1",
+      "passed": true
+    },
+    {
+      "id": "independent_balanced_stage3",
+      "passed": true
+    },
+    {
+      "id": "independent_unbalanced_stage3_-1",
+      "passed": true
+    },
+    {
+      "id": "independent_unbalanced_stage3_1",
+      "passed": true
+    },
+    {
+      "id": "independent_character_load",
+      "passed": true
+    },
+    {
+      "id": "independent_contract_player_mass",
+      "passed": true
+    },
+    {
+      "id": "independent_contract_gravity",
+      "passed": true
+    },
+    {
+      "id": "independent_notch_reject_release",
+      "passed": true
+    },
+    {
+      "id": "independent_impossible_transfer",
+      "passed": true
+    },
+    {
+      "id": "independent_closed_hatch",
+      "passed": true
+    },
+    {
+      "id": "independent_jam_restraint",
+      "passed": true
+    },
+    {
+      "id": "independent_jam_public_recovery",
+      "passed": true
+    },
+    {
+      "id": "independent_jam_native_release",
+      "passed": true
+    },
+    {
+      "id": "independent_rail_velocity_transfer",
+      "passed": true
+    },
+    {
+      "id": "independent_locked_rider_no_drift",
+      "passed": true
+    },
+    {
+      "id": "independent_vertical_velocity_transfer",
+      "passed": true
+    },
+    {
+      "id": "independent_reset_while_moving",
+      "passed": true
+    },
+    {
+      "id": "independent_reset_payload_in_transit",
+      "passed": true
+    },
+    {
+      "id": "independent_joint_limits",
+      "passed": true
+    },
+    {
+      "id": "independent_contact_rising_descending",
+      "passed": true
+    },
+    {
+      "id": "independent_contact_descending_faster",
+      "passed": true
+    },
+    {
+      "id": "independent_contact_descending_away",
+      "passed": true
+    },
+    {
+      "id": "independent_contact_rising_catches_ascending",
+      "passed": true
+    },
+    {
+      "id": "independent_contact_max_fall_speed",
+      "passed": true
+    },
+    {
+      "id": "independent_diagonal_contact",
+      "passed": true
+    },
+    {
+      "id": "independent_no_air_jump",
+      "passed": true
+    },
+    {
+      "id": "independent_runtime_bounds_consistency",
+      "passed": true
+    },
+    {
+      "id": "independent_recessed_floor_contact",
+      "passed": true
+    },
+    {
+      "id": "independent_payload_bottom_anchor",
+      "passed": true
+    },
+    {
+      "id": "independent_pan_player_position",
+      "passed": true
+    },
+    {
+      "id": "independent_pan_lip_blocks_walk",
+      "passed": true
+    },
+    {
+      "id": "independent_support_coordinate_contract",
+      "passed": true
+    },
+    {
+      "id": "independent_pan_pressure_interlock",
+      "passed": true
+    },
+    {
+      "id": "independent_source_stability",
+      "passed": true
+    },
+    {
+      "id": "rotated_payload_rest_contact",
+      "passed": true
+    },
+    {
+      "id": "gravity_chute_actual_geometry_contact",
+      "passed": true
+    },
+    {
+      "id": "no_generic_cargo_tumble",
+      "passed": true
+    },
+    {
+      "id": "receiver_lane_continuity",
+      "passed": true
+    },
+    {
+      "id": "finite_roller_bed_support",
+      "passed": true
+    },
+    {
+      "id": "finite_chute_lane_clearance",
+      "passed": true
+    },
+    {
+      "id": "ordinary_route_after_contact_fix",
+      "passed": true
+    }
+  ],
+  "video_sha256": "711304524056e081327fad794ca02be4bfe617888848d93df4b89f01512f2b7c",
+  "scope": "Production build and mechanics from the portable publication checkout. Does not clear visual quality, full motion, listening or audiovisual sync."
+}

@@ -1,0 +1,43 @@
+{
+  "uv_convention": "1 UV unit per metre for material surfaces; labels retain deliberate [0,1] UVs",
+  "normal_convention": "OpenGL tangent-space; GLB image flipY=false in Three.js",
+  "runtime_rule": "Preserve GLTFLoader material and KHR_texture_transform; no arbitrary tint or repeat overrides",
+  "materials": {
+    "handled_lacquer": {
+      "material_slot": "mat_handled_lacquer",
+      "tile_size_m": 0.5,
+      "blender_mapping_scale": 2.0,
+      "base_color_multiplier": [
+        1,
+        1,
+        1
+      ],
+      "normal_strength": 1.0,
+      "metalness": 0.0
+    },
+    "luggage_canvas": {
+      "material_slot": "mat_luggage_canvas",
+      "tile_size_m": 0.1,
+      "blender_mapping_scale": 10.0,
+      "base_color_multiplier": [
+        1,
+        1,
+        1
+      ],
+      "normal_strength": 1.0,
+      "metalness": 0.0
+    },
+    "worn_lining": {
+      "material_slot": "mat_worn_lining",
+      "tile_size_m": 0.25,
+      "blender_mapping_scale": 4.0,
+      "base_color_multiplier": [
+        1,
+        1,
+        1
+      ],
+      "normal_strength": 1.0,
+      "metalness": 0.0
+    }
+  }
+}

@@ -1,0 +1,10 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>The Vertical Lost &amp; Found</title><link rel="stylesheet" href="/src/style.css"></head>
+<body><main id="app"><canvas id="viewport" aria-label="Railway archive climbing puzzle"></canvas>
+<div id="hud">
+  <header id="hud-top"><div class="objective"><p class="eyebrow">The Vertical Lost &amp; Found</p><h1 id="hud-stage-title">01 / Find a way up</h1><p id="hud-objective"></p></div>
+  <div class="status"><span id="hud-alt"></span><span id="hud-carried"></span><span>Checkpoint <b id="hud-checkpoint"></b></span></div></header>
+  <p id="hud-banner" role="status" aria-live="polite" hidden></p>
+  <footer id="hud-bottom"><section class="mechanism" aria-label="Selected mechanism"><p id="hud-select-hint" class="eyebrow"></p><h2 id="hud-mech-id"></h2><p class="mechanism-stats"><span id="hud-mech-ext"></span><span id="hud-mech-notch"></span><span id="hud-mech-load"></span></p><div id="hud-targets" aria-label="Nearby mechanisms"></div><p id="hud-cargo-selection"></p><div id="hud-payloads" aria-label="Nearby cargo"></div></section>
+  <div id="hud-controls"><p><kbd>W A S D</kbd> Move <kbd>Space</kbd> Jump <kbd>Tab</kbd> Mechanism <kbd>Shift + Tab</kbd> Cargo</p><p><kbd>Q E</kbd> Rail <kbd>L</kbd> Latch <kbd>H</kbd> Hatch <kbd>F</kbd> Cargo <kbd>G</kbd> Shutter</p><div class="buttons"><button id="btn-audio" type="button" aria-pressed="false">Enable sound</button><button id="btn-retry" type="button">Retry checkpoint <kbd>R</kbd></button></div></div></footer>
+</div></main><script type="module" src="/src/main.js"></script></body></html>
