@@ -1,7 +1,6 @@
 # The Vertical Lost & Found
 
-<!-- SHOWCASE_VIDEO -->
-[![Watch the one-minute gameplay demo](docs/media/showcase-poster.png)](showcase-1080p60.mp4)
+https://github.com/user-attachments/assets/b126354c-ce20-4bfc-b07f-9eb815dfc5b7
 
 [Download the original 1080p60 video](showcase-1080p60.mp4)
 
