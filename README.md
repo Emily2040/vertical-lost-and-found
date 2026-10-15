@@ -2,9 +2,17 @@
 
 [English](README.md) · [简体中文](README.zh-CN.md) · [日本語](README.ja.md) · [한국어](README.ko.md)
 
+<p align="center">
+  <a href="https://github.com/Emily2040/vertical-lost-and-found/raw/HEAD/showcase-1080p60.mp4">
+    <img src="./docs/media/showcase-preview.webp" width="100%" alt="The Vertical Lost & Found: 60-second showcase preview (click to download 1080p60 MP4 with stereo audio)" />
+  </a>
+</p>
+
 https://github.com/user-attachments/assets/b126354c-ce20-4bfc-b07f-9eb815dfc5b7
 
-[Download the original 1080p60 video (MP4, 57 MB)](https://github.com/Emily2040/vertical-lost-and-found/raw/HEAD/showcase-1080p60.mp4)
+<p align="center">
+  <a href="https://github.com/Emily2040/vertical-lost-and-found/raw/HEAD/showcase-1080p60.mp4"><strong>Download the original 1080p60 video with stereo audio (MP4, 57 MB)</strong></a>
+</p>
 
 ## Prompt
 
@@ -72,7 +80,7 @@ The in-game hints explain the selected target. Sound starts after an interaction
 npm run verify
 ```
 
-This builds the application and runs 77 mechanics checks plus four ordinary-control routes. Generated test evidence goes into `.run/verification/`. Human difficulty testing remains separate.
+This builds the application and runs 82 mechanics checks plus four ordinary-control routes. Generated test evidence goes into `.run/verification/`. Human difficulty testing remains separate.
 
 Editable `.blend` files are in `assets/blender/`. Geometry builders, raw generated textures, material preparation scripts and the persistent scene records are included. See [authoring](docs/authoring.md), [recording](docs/recording.md) and [verification](docs/verification.md).
 

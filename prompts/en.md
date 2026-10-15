@@ -4,6 +4,26 @@ This is a consolidated brief for the project built with Gemini 4 in Google Antig
 
 The prompt describes the target. The included candidate uses constrained character support, analytic mechanisms and discrete cargo handling. Its photographic target remains unmet; full motion, listening, audiovisual sync and human difficulty review remain open. The material sources were generated at 1024 × 1024 and prepared at 2048 × 2048. See [provenance](../docs/provenance.md) and [verification](../docs/verification.md) for the achieved scope.
 
+## Core prompt
+
+```text
+Build a climbing puzzle across a monumental wall of drawers inside an abandoned railway hall.
+
+Begin with a drawer bursting open beneath me. Its contents roll into a receiving tray, pulling a counterweight that opens the next drawer just in time for my jump.
+
+Let me climb the mechanism while changing its loads. Pull drawers along rails, latch them at visible notches and transfer substantial objects between connected trays. A drawer can become a step, lift or counterweight depending on how I use it.
+
+Fill the wall with recognisable belongings: trunks, rolled carpets, boxed instruments and ceramic parcels. Model rails, rollers, exposed cables and transfer chutes in Blender. Use Nano Banana for handled lacquer, luggage canvas and worn lining.
+
+Stage one builds a staircase from three drawers. Stage two moves one heavy case between linked drawers to raise a lift while preserving a return route. Stage three requires an ascending sequence of load transfers, moving platforms and timed jumps.
+
+Preserve object identity and mass. My weight must affect an unlocked platform, and latches must engage real notches.
+
+Finish by opening the final drawer from inside. Daylight reveals a rooftop garden beyond the colossal storage wall. Capture the complete progression in an energetic one-minute showcase.
+```
+
+## Expanded build brief
+
 Copy the text below into your build session:
 
 ```text

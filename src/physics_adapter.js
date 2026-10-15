@@ -49,7 +49,17 @@ export class PhysicsRuntimeAdapter {
       prevYMap[id] = d.y;
     }
 
+    const restoresBefore = this.sim.stats.checkpointsRestored;
+
     this.sim.stepFixed(dt);
+
+    if (this.sim.stats.checkpointsRestored !== restoresBefore) {
+      for (const d of Object.values(this.sim.drawers)) {
+        d.vz = 0.0;
+        d.vy = 0.0;
+      }
+      return;
+    }
 
     // Ensure drawer velocities reflect actual frame displacement (fixes stale rail velocity watchpoint)
     let railMotion = null;
@@ -270,7 +280,10 @@ export class PhysicsRuntimeAdapter {
           const carriedId = sim.player.carriedPayloadId;
           const carried = sim.payloads[carriedId];
 
-          if(!params.targetId && sim.interactionTargetId) params={...params,targetId:sim.interactionTargetId};
+          const selectedTarget = sim.interactionTargetId ? sim.drawers[sim.interactionTargetId] : null;
+          if (!params.targetId && selectedTarget && this._distToDrawer(selectedTarget) <= INTERACT_REACH_M) {
+            params = { ...params, targetId: selectedTarget.id };
+          }
           // Priority 1: Explicit targetId if passed and within reach
           if (params.targetId) {
             if (sim.chutes[params.targetId]) {

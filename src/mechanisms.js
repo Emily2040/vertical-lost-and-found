@@ -9,7 +9,7 @@ export function applyRuntimeLayout(sim){
 
 function ropeLift(sim,setup,dt){
  const lift=sim.drawers[setup.lift],counter=sim.drawers[setup.counter];
- if(lift.latched||counter.latched||lift.jammed||counter.jammed){lift.vy=0;counter.vy=0;counter.y=counter.maxY-setup.ratio*(lift.y-lift.minY);return;}
+ if(lift.latched||counter.latched||lift.jammed||counter.jammed){lift.vy=0;counter.vy=0;lift.overloadWarned=false;counter.y=counter.maxY-setup.ratio*(lift.y-lift.minY);return;}
  const a=sim.getDrawerEffectiveMass(lift.id),b=sim.getDrawerEffectiveMass(counter.id),r=setup.ratio;
  const drive=sim.contract.simulation.gravity_mps2*(r*b-a);
  let force=drive;
@@ -19,7 +19,8 @@ function ropeLift(sim,setup,dt){
  const next=clamp(lift.y+lift.vy*dt,lift.minY,lift.maxY);
  lift.vy=(next-lift.y)/dt;lift.y=next;
  counter.y=counter.maxY-r*(lift.y-lift.minY);
- if(sim.player.supportId===lift.id&&drive<0&&sim.stats.overloadWarnings===0){sim.stats.overloadWarnings++;sim.showBanner(`LIFT ${lift.number} DESCENDS: rider and cargo exceed counterweight. Return to the latched ledge.`, 'reject',4);}
+ if(sim.player.supportId!==lift.id||drive>=0)lift.overloadWarned=false;
+ else if(!lift.overloadWarned){lift.overloadWarned=true;sim.stats.overloadWarnings++;sim.showBanner(`LIFT ${lift.number} DESCENDS: rider and cargo exceed counterweight. Return to the latched ledge.`, 'reject',4);}
 }
 
 export function stepMechanisms(sim,dt){
@@ -51,7 +52,8 @@ export function stepMechanisms(sim,dt){
  const west=sim.drawers.cage_s3_west,a=sim.drawers.drawer_s3_a;
  const westLoad=sim.getDrawerPayloadMass(west.id);
  if(!a.latched&&!a.jammed){
-  const rider=sim.player.supportId===a.id&&sim.player.grounded?sim.contract.simulation.player_mass_kg:0;
+  const carriedMass=sim.player.carriedPayloadId?sim.payloads[sim.player.carriedPayloadId]?.massKg||0:0;
+  const rider=sim.player.supportId===a.id&&sim.player.grounded?sim.contract.simulation.player_mass_kg+carriedMass:0;
   const force=gravity*(westLoad-25-rider);
   west.driveVy=clamp(((west.driveVy||0)-force/(west.baseMassKg+westLoad+a.baseMassKg+rider)*dt)*Math.exp(-0.8*dt),-0.65,0.65);
   west.y=clamp(west.y+west.driveVy*dt,west.minY,west.maxY);

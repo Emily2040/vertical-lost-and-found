@@ -1,9 +1,9 @@
 {
-  "checked_at": "2026-10-14T21:40:10.025514+00:00",
+  "checked_at": "2026-10-15T14:06:27.301Z",
   "install": "npm ci --no-audit --no-fund",
   "build_passed": true,
   "mechanics_passed": true,
-  "mechanics_check_count": 77,
+  "mechanics_check_count": 82,
   "ordinary_routes_completed": 4,
   "checks": [
     {
@@ -280,6 +280,26 @@
     },
     {
       "id": "independent_pan_pressure_interlock",
+      "passed": true
+    },
+    {
+      "id": "independent_stale_interaction_target_cargo_fallback",
+      "passed": true
+    },
+    {
+      "id": "independent_fall_restore_zero_velocity",
+      "passed": true
+    },
+    {
+      "id": "independent_stage3_west_platform_carried_mass",
+      "passed": true
+    },
+    {
+      "id": "independent_vertical_lift_latch_banner_units",
+      "passed": true
+    },
+    {
+      "id": "independent_per_lift_overload_warning",
       "passed": true
     },
     {

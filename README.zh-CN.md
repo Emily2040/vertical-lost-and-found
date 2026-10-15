@@ -2,9 +2,17 @@
 
 [English](README.md) · [简体中文](README.zh-CN.md) · [日本語](README.ja.md) · [한국어](README.ko.md)
 
+<p align="center">
+  <a href="https://github.com/Emily2040/vertical-lost-and-found/raw/HEAD/showcase-1080p60.mp4">
+    <img src="./docs/media/showcase-preview.webp" width="100%" alt="The Vertical Lost & Found — 60 秒演示预览（点击下载带立体声的 1080p60 MP4 原片）" />
+  </a>
+</p>
+
 https://github.com/user-attachments/assets/b126354c-ce20-4bfc-b07f-9eb815dfc5b7
 
-[下载原始 1080p60 视频（MP4，57 MB）](https://github.com/Emily2040/vertical-lost-and-found/raw/HEAD/showcase-1080p60.mp4)
+<p align="center">
+  <a href="https://github.com/Emily2040/vertical-lost-and-found/raw/HEAD/showcase-1080p60.mp4"><strong>下载带立体声音频的原始 1080p60 视频（MP4，57 MB）</strong></a>
+</p>
 
 ## 提示词
 
@@ -72,7 +80,7 @@ npm run preview
 npm run verify
 ```
 
-此命令会构建应用，执行 77 项机关与物理机制检查，并以常规操作跑通四条路线。生成的测试证据保存在 `.run/verification/`。这些检查不包含真实玩家的难度测试，后者需要另行进行。
+此命令会构建应用，执行 82 项机关与物理机制检查，并以常规操作跑通四条路线。生成的测试证据保存在 `.run/verification/`。这些检查不包含真实玩家的难度测试，后者需要另行进行。
 
 可编辑的 `.blend` 文件位于 `assets/blender/`。仓库还包含几何构建脚本、生成的原始纹理、材质处理脚本和持久化场景记录。详见[制作说明](docs/authoring.md)、[录制说明](docs/recording.md)和[验证说明](docs/verification.md)。
 

@@ -1,6 +1,6 @@
 # Verification and limits
 
-The production run passed 77 mechanics checks and four ordinary-control routes. The checks cover rail limits, latches, balanced and unbalanced loads, moving supports, chutes, stage progression, failure and retry. Run `npm run verify` to rebuild and repeat those checks from this checkout.
+The production run passed 82 mechanics checks and four ordinary-control routes. The checks cover rail limits, latches, balanced and unbalanced loads, moving supports, chutes, stage progression, failure and retry. Run `npm run verify` to rebuild and repeat those checks from this checkout.
 
 The exact included MP4 passed 44 technical checks: 60 seconds, 3,600 decoded frames, constant 60 FPS, progressive 1920 × 1080, Rec.709 colour tags, stereo 48 kHz AAC and a clean full decode. Encoded audio measured −23.19 LUFS and −1.47 dBTP; the source PCM had no clipped samples. Those measurements do not establish listening quality.
 

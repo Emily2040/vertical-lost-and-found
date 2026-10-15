@@ -2,9 +2,17 @@
 
 [English](README.md) · [简体中文](README.zh-CN.md) · [日本語](README.ja.md) · [한국어](README.ko.md)
 
+<p align="center">
+  <a href="https://github.com/Emily2040/vertical-lost-and-found/raw/HEAD/showcase-1080p60.mp4">
+    <img src="./docs/media/showcase-preview.webp" width="100%" alt="The Vertical Lost & Found — 60秒ショーケースプレビュー（クリックでステレオ音声付き 1080p60 MP4 をダウンロード）" />
+  </a>
+</p>
+
 https://github.com/user-attachments/assets/b126354c-ce20-4bfc-b07f-9eb815dfc5b7
 
-[オリジナルの動画（1080p60、MP4、57 MB）をダウンロード](https://github.com/Emily2040/vertical-lost-and-found/raw/HEAD/showcase-1080p60.mp4)
+<p align="center">
+  <a href="https://github.com/Emily2040/vertical-lost-and-found/raw/HEAD/showcase-1080p60.mp4"><strong>ステレオ音声付きオリジナル動画（1080p60、MP4、57 MB）をダウンロード</strong></a>
+</p>
 
 ## プロンプト
 
@@ -72,7 +80,7 @@ npm run preview
 npm run verify
 ```
 
-アプリをビルドし、仕掛けに関する 77 項目のチェックと、通常の操作で進む 4 つのルートを実行します。テスト結果は `.run/verification/` に保存されます。人がプレイして難易度を評価するテストは、これとは別に必要です。
+アプリをビルドし、仕掛けに関する 82 項目のチェックと、通常の操作で進む 4 つのルートを実行します。テスト結果は `.run/verification/` に保存されます。人がプレイして難易度を評価するテストは、これとは別に必要です。
 
 編集可能な `.blend` ファイルは `assets/blender/` にあります。形状を生成するスクリプト、生成直後のテクスチャ画像、マテリアルの準備スクリプト、シーンの状態を保存する記録も収録しています。[制作手順](docs/authoring.md)、[録画方法](docs/recording.md)、[検証内容](docs/verification.md)を参照してください。
 

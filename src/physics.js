@@ -576,7 +576,7 @@ export class ArchiveSimulation {
       d.latched = false;
       d.latchedNotchIndex = -1;
       if (this.audio) this.audio.trigger(this.time, 'notch_release', { drawer: d.number });
-      this.showBanner(`UNLATCHED ${d.number}: Rail unlocked (${d.zExt.toFixed(2)}m)`, 'info', 2.2);
+      this.showBanner(`UNLATCHED ${d.number}: Rail unlocked (${railValue.toFixed(2)}m)`, 'info', 2.2);
       return { ok: true, latched: false, drawer: d.id };
     }
 
@@ -594,8 +594,8 @@ export class ArchiveSimulation {
     if (bestDiff > NOTCH_TOLERANCE_M) {
       d.rejectFlashTimer = 1.2;
       this.stats.notchRejections += 1;
-      if (this.audio) this.audio.trigger(this.time, 'latch_reject', { drawer: d.number, zExt: d.zExt });
-      const msg = `LATCH REJECTED on ${d.number}: Rail at ${d.zExt.toFixed(2)}m misses notch ${nearestNotch.toFixed(2)}m (±${NOTCH_TOLERANCE_M.toFixed(2)}m)`;
+      if (this.audio) this.audio.trigger(this.time, 'latch_reject', { drawer: d.number, zExt: railValue });
+      const msg = `LATCH REJECTED on ${d.number}: Rail at ${railValue.toFixed(2)}m misses notch ${nearestNotch.toFixed(2)}m (±${NOTCH_TOLERANCE_M.toFixed(2)}m)`;
       this.showBanner(msg, 'reject', 3.4);
       return { ok: false, reason: 'missed_notch', diff: bestDiff, nearestNotch, message: msg };
     }

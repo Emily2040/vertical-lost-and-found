@@ -2,9 +2,17 @@
 
 [English](README.md) · [简体中文](README.zh-CN.md) · [日本語](README.ja.md) · [한국어](README.ko.md)
 
+<p align="center">
+  <a href="https://github.com/Emily2040/vertical-lost-and-found/raw/HEAD/showcase-1080p60.mp4">
+    <img src="./docs/media/showcase-preview.webp" width="100%" alt="The Vertical Lost & Found — 60초 쇼케이스 미리보기 (클릭하면 스테레오 오디오가 포함된 1080p60 MP4 원본 다운로드)" />
+  </a>
+</p>
+
 https://github.com/user-attachments/assets/b126354c-ce20-4bfc-b07f-9eb815dfc5b7
 
-[1080p60 원본 영상 다운로드 (MP4, 57 MB)](https://github.com/Emily2040/vertical-lost-and-found/raw/HEAD/showcase-1080p60.mp4)
+<p align="center">
+  <a href="https://github.com/Emily2040/vertical-lost-and-found/raw/HEAD/showcase-1080p60.mp4"><strong>스테레오 오디오가 포함된 1080p60 원본 영상 다운로드 (MP4, 57 MB)</strong></a>
+</p>
 
 ## 프롬프트
 
@@ -72,7 +80,7 @@ npm run preview
 npm run verify
 ```
 
-이 명령은 앱을 빌드한 뒤 게임 동작 검사 77개와 일반 조작으로 진행하는 플레이 경로 4개를 검증합니다. 검사 결과는 `.run/verification/`에 저장됩니다. 사람이 직접 플레이하며 난이도를 평가하는 과정은 별도로 필요합니다.
+이 명령은 앱을 빌드한 뒤 게임 동작 검사 82개와 일반 조작으로 진행하는 플레이 경로 4개를 검증합니다. 검사 결과는 `.run/verification/`에 저장됩니다. 사람이 직접 플레이하며 난이도를 평가하는 과정은 별도로 필요합니다.
 
 수정 가능한 `.blend` 파일은 `assets/blender/`에 있습니다. 지오메트리 생성 스크립트, 생성된 텍스처 원본, 머티리얼 준비 스크립트, 장면 상태를 보존하는 기록 파일도 포함되어 있습니다. [제작 안내](docs/authoring.md), [녹화 안내](docs/recording.md), [검증 안내](docs/verification.md)를 참고하세요.
 
