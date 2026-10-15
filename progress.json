@@ -1,0 +1,34 @@
+{
+  "project": "vertical-lost-and-found",
+  "revision": "private-review-01",
+  "owners": {
+    "maintainer": "Emily2040",
+    "development": "Gemini 4 in Google Antigravity, with iterative implementation and verification revisions"
+  },
+  "milestones": [
+    {
+      "id": "source_checkout",
+      "status": "build_and_77_mechanics_checks_passed",
+      "evidence": [
+        "docs/checkout-verification.json"
+      ]
+    },
+    {
+      "id": "showcase",
+      "status": "technical_specs_passed_perceptual_review_incomplete",
+      "evidence": [
+        "showcase-1080p60.mp4",
+        "docs/verification.md"
+      ]
+    }
+  ],
+  "overall_status": "private_review_candidate",
+  "unresolved_work": [
+    "Photographic visual target remains unmet.",
+    "Full motion, listening and audiovisual sync review remain unperformed.",
+    "Human difficulty testing remains unperformed."
+  ],
+  "next_actions": [
+    "Review the private draft pull request before any merge or public visibility change."
+  ]
+}

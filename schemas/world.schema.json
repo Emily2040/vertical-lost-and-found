@@ -1,0 +1,542 @@
+{
+  "type": "object",
+  "required": [
+    "project",
+    "revision",
+    "coordinate_space",
+    "entities",
+    "art_direction",
+    "camera_presets",
+    "light_presets",
+    "runtime"
+  ],
+  "properties": {
+    "project": {
+      "const": "vertical-lost-and-found"
+    },
+    "revision": {
+      "type": "string",
+      "minLength": 1
+    },
+    "coordinate_space": {
+      "const": "runtime_threejs_yup_meters"
+    },
+    "entities": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "type",
+          "parent",
+          "transform",
+          "revision"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "stage": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 3
+          },
+          "transform": {
+            "type": "object",
+            "required": [
+              "position",
+              "rotation_euler_rad",
+              "scale"
+            ],
+            "properties": {
+              "position": {
+                "type": "array",
+                "minItems": 3,
+                "maxItems": 3,
+                "items": {
+                  "type": "number"
+                }
+              },
+              "rotation_euler_rad": {
+                "type": "array",
+                "minItems": 3,
+                "maxItems": 3,
+                "items": {
+                  "type": "number"
+                }
+              },
+              "scale": {
+                "type": "array",
+                "minItems": 3,
+                "maxItems": 3,
+                "items": {
+                  "type": "number"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "runtime": {
+      "type": "object",
+      "required": [
+        "drawers",
+        "payloads",
+        "chutes",
+        "mechanisms",
+        "playerStart",
+        "stage3EntryY",
+        "supportHullSource"
+      ],
+      "properties": {
+        "drawers": {
+          "type": "object",
+          "minProperties": 1,
+          "additionalProperties": {
+            "type": "object",
+            "required": [
+              "id",
+              "x",
+              "y",
+              "zExt",
+              "width",
+              "height",
+              "depth",
+              "baseMassKg",
+              "latched"
+            ],
+            "dependentRequired": {
+              "minZ": [
+                "maxZ"
+              ],
+              "maxZ": [
+                "minZ"
+              ],
+              "minY": [
+                "maxY"
+              ],
+              "maxY": [
+                "minY"
+              ]
+            },
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "x": {
+                "type": "number"
+              },
+              "y": {
+                "type": "number"
+              },
+              "zExt": {
+                "type": "number"
+              },
+              "minZ": {
+                "type": "number"
+              },
+              "maxZ": {
+                "type": "number"
+              },
+              "minY": {
+                "type": "number"
+              },
+              "maxY": {
+                "type": "number"
+              },
+              "width": {
+                "type": "number",
+                "exclusiveMinimum": 0
+              },
+              "height": {
+                "type": "number",
+                "exclusiveMinimum": 0
+              },
+              "depth": {
+                "type": "number",
+                "exclusiveMinimum": 0
+              },
+              "baseMassKg": {
+                "type": "number",
+                "minimum": 0
+              },
+              "latched": {
+                "type": "boolean"
+              },
+              "climbable": {
+                "type": "boolean"
+              },
+              "notches": {
+                "type": "array",
+                "items": {
+                  "type": "number"
+                }
+              },
+              "verticalNotches": {
+                "type": "array",
+                "items": {
+                  "type": "number"
+                }
+              }
+            }
+          }
+        },
+        "payloads": {
+          "type": "object",
+          "minProperties": 6,
+          "additionalProperties": {
+            "type": "object",
+            "required": [
+              "id",
+              "massKg",
+              "meshId",
+              "holderId",
+              "state",
+              "x",
+              "y",
+              "z",
+              "supportHull"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "meshId": {
+                "type": "string",
+                "minLength": 1
+              },
+              "massKg": {
+                "type": "number",
+                "exclusiveMinimum": 0
+              },
+              "holderId": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "state": {
+                "type": "string",
+                "minLength": 1
+              },
+              "x": {
+                "type": "number"
+              },
+              "y": {
+                "type": "number"
+              },
+              "z": {
+                "type": "number"
+              },
+              "supportHull": {
+                "type": "array",
+                "minItems": 4,
+                "items": {
+                  "type": "array",
+                  "minItems": 3,
+                  "maxItems": 3,
+                  "items": {
+                    "type": "number"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "chutes": {
+          "type": "object",
+          "minProperties": 2,
+          "additionalProperties": {
+            "type": "object",
+            "required": [
+              "id",
+              "targetHolderId",
+              "entryX",
+              "entryY",
+              "entryZ",
+              "exitX",
+              "exitY",
+              "exitZ",
+              "kineticFriction"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "targetHolderId": {
+                "type": "string",
+                "minLength": 1
+              },
+              "kineticFriction": {
+                "type": "number",
+                "minimum": 0
+              },
+              "entryX": {
+                "type": "number"
+              },
+              "entryY": {
+                "type": "number"
+              },
+              "entryZ": {
+                "type": "number"
+              },
+              "exitX": {
+                "type": "number"
+              },
+              "exitY": {
+                "type": "number"
+              },
+              "exitZ": {
+                "type": "number"
+              }
+            }
+          }
+        },
+        "mechanisms": {
+          "type": "object",
+          "required": [
+            "stage2",
+            "stage3"
+          ],
+          "additionalProperties": {
+            "type": "object",
+            "required": [
+              "lift",
+              "counter",
+              "ratio",
+              "frictionN",
+              "damping",
+              "maxSpeed"
+            ],
+            "properties": {
+              "lift": {
+                "type": "string",
+                "minLength": 1
+              },
+              "counter": {
+                "type": "string",
+                "minLength": 1
+              },
+              "ratio": {
+                "type": "number",
+                "exclusiveMinimum": 0
+              },
+              "frictionN": {
+                "type": "number",
+                "minimum": 0
+              },
+              "damping": {
+                "type": "number",
+                "minimum": 0
+              },
+              "maxSpeed": {
+                "type": "number",
+                "exclusiveMinimum": 0
+              }
+            }
+          }
+        },
+        "playerStart": {
+          "type": "object",
+          "required": [
+            "x",
+            "y",
+            "z",
+            "supportId"
+          ],
+          "properties": {
+            "x": {
+              "type": "number"
+            },
+            "y": {
+              "type": "number"
+            },
+            "z": {
+              "type": "number"
+            },
+            "supportId": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        "stage3EntryY": {
+          "type": "number"
+        },
+        "supportHullSource": {
+          "type": "object",
+          "required": [
+            "asset",
+            "sha256",
+            "space"
+          ],
+          "properties": {
+            "asset": {
+              "type": "string",
+              "minLength": 1
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-fA-F]{64}$"
+            },
+            "space": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        }
+      }
+    },
+    "camera_presets": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "position": {
+            "type": "array",
+            "minItems": 3,
+            "maxItems": 3,
+            "items": {
+              "type": "number"
+            }
+          },
+          "target": {
+            "type": "array",
+            "minItems": 3,
+            "maxItems": 3,
+            "items": {
+              "type": "number"
+            }
+          },
+          "position_offset_from_target": {
+            "type": "array",
+            "minItems": 3,
+            "maxItems": 3,
+            "items": {
+              "type": "number"
+            }
+          },
+          "start_position": {
+            "type": "array",
+            "minItems": 3,
+            "maxItems": 3,
+            "items": {
+              "type": "number"
+            }
+          },
+          "end_position": {
+            "type": "array",
+            "minItems": 3,
+            "maxItems": 3,
+            "items": {
+              "type": "number"
+            }
+          },
+          "start_target": {
+            "type": "array",
+            "minItems": 3,
+            "maxItems": 3,
+            "items": {
+              "type": "number"
+            }
+          },
+          "end_target": {
+            "type": "array",
+            "minItems": 3,
+            "maxItems": 3,
+            "items": {
+              "type": "number"
+            }
+          },
+          "fov_deg": {
+            "type": "number",
+            "exclusiveMinimum": 0,
+            "exclusiveMaximum": 180
+          },
+          "fov_start_deg": {
+            "type": "number",
+            "exclusiveMinimum": 0,
+            "exclusiveMaximum": 180
+          },
+          "fov_end_deg": {
+            "type": "number",
+            "exclusiveMinimum": 0,
+            "exclusiveMaximum": 180
+          },
+          "source": {
+            "type": "string",
+            "minLength": 1
+          },
+          "target_formula": {
+            "type": "string",
+            "minLength": 1
+          },
+          "framing": {
+            "type": "string",
+            "minLength": 1
+          },
+          "duration_seconds": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "exponential_damping_per_second": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "requires_completed": {
+            "type": "boolean"
+          }
+        },
+        "anyOf": [
+          {
+            "required": [
+              "position",
+              "target",
+              "fov_deg"
+            ]
+          },
+          {
+            "required": [
+              "source",
+              "fov_deg"
+            ],
+            "anyOf": [
+              {
+                "required": [
+                  "target_formula",
+                  "position_offset_from_target"
+                ]
+              },
+              {
+                "required": [
+                  "framing"
+                ]
+              }
+            ]
+          },
+          {
+            "required": [
+              "source",
+              "duration_seconds",
+              "start_position",
+              "end_position",
+              "start_target",
+              "end_target",
+              "fov_start_deg",
+              "fov_end_deg"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Vertical Lost & Found world record"
+}

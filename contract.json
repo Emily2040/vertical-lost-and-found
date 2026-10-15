@@ -1,0 +1,169 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "project": "vertical-lost-and-found",
+  "title": "The Vertical Lost & Found",
+  "revision": "retry02",
+  "units": {
+    "length": "m",
+    "mass": "kg",
+    "time": "s",
+    "angle": "rad",
+    "force": "N"
+  },
+  "coordinates": {
+    "blender": {
+      "handedness": "right",
+      "up": "+Z",
+      "forward": "-Y",
+      "right": "+X"
+    },
+    "runtime_threejs": {
+      "handedness": "right",
+      "up": "+Y",
+      "forward": "+Z",
+      "right": "+X"
+    },
+    "gltf_export_yup": true,
+    "transform_tolerance_m": 0.005
+  },
+  "simulation": {
+    "fixed_dt_s": 0.008333333333333333,
+    "substeps_at_60hz": 2,
+    "max_frame_delta_clamp_s": 0.25,
+    "gravity_mps2": 9.81,
+    "player_mass_kg": 65,
+    "player_radius_m": 0.32,
+    "player_height_m": 1.72,
+    "player_walk_speed_mps": 4.4,
+    "player_jump_speed_mps": 6.6,
+    "rail_notch_tolerance_m": 0.1,
+    "platform_velocity_transfer": true,
+    "interaction_reach_m": 2.45,
+    "model_notes": "Constrained rigid platform and rope mechanisms, 120 Hz. Gravity chutes use slope acceleration with kinetic friction and free fall to moving receivers. Rope lift inertia uses m_lift + ratio^2*m_counter. Static friction, viscous damping and hard travel stops dissipate energy.",
+    "support_geometry": "Measured visible baize floor and rim surfaces; drawer player depth uses localZ=player.z-drawer.zExt+0.30. Payload bottom offsets come from loaded GLB bounds. Rear pan includes any actually supported player mass."
+  },
+  "material_families": [
+    {
+      "id": "mat_handled_lacquer",
+      "name": "Handled Archival Lacquer",
+      "required_resolution_px": [
+        2048,
+        2048
+      ],
+      "channels": [
+        "baseColor",
+        "roughness",
+        "metalness",
+        "normal"
+      ],
+      "color_spaces": {
+        "baseColor": "sRGB",
+        "roughness": "Linear",
+        "metalness": "Linear",
+        "normal": "Linear"
+      }
+    },
+    {
+      "id": "mat_luggage_canvas",
+      "name": "Labelled Luggage Canvas",
+      "required_resolution_px": [
+        2048,
+        2048
+      ],
+      "channels": [
+        "baseColor",
+        "roughness",
+        "metalness",
+        "normal"
+      ],
+      "color_spaces": {
+        "baseColor": "sRGB",
+        "roughness": "Linear",
+        "metalness": "Linear",
+        "normal": "Linear"
+      }
+    },
+    {
+      "id": "mat_worn_lining",
+      "name": "Worn Interior Drawer Lining",
+      "required_resolution_px": [
+        2048,
+        2048
+      ],
+      "channels": [
+        "baseColor",
+        "roughness",
+        "metalness",
+        "normal"
+      ],
+      "color_spaces": {
+        "baseColor": "sRGB",
+        "roughness": "Linear",
+        "metalness": "Linear",
+        "normal": "Linear"
+      }
+    }
+  ],
+  "payload_catalog": [
+    {
+      "id": "rolling_parcel_01",
+      "label": "Dispatch Brass Parcel",
+      "mass_kg": 18,
+      "mesh_id": "mesh_rolling_parcel"
+    },
+    {
+      "id": "payload_trunk_01",
+      "label": "Steamer Trunk #A-12",
+      "mass_kg": 35,
+      "mesh_id": "mesh_steamer_trunk"
+    },
+    {
+      "id": "payload_carpet_02",
+      "label": "Rolled Persian Carpet",
+      "mass_kg": 25,
+      "mesh_id": "mesh_rolled_carpet"
+    },
+    {
+      "id": "payload_ceramic_03",
+      "label": "Crated Ceramic Parcel",
+      "mass_kg": 20,
+      "mesh_id": "mesh_ceramic_parcel"
+    },
+    {
+      "id": "payload_umbrella_04",
+      "label": "Cast-Base Umbrella Case",
+      "mass_kg": 15,
+      "mesh_id": "mesh_umbrella_case"
+    },
+    {
+      "id": "payload_instruments_05",
+      "label": "Boxed Surveying Instruments",
+      "mass_kg": 45,
+      "mesh_id": "mesh_boxed_instruments"
+    }
+  ],
+  "interfaces": {
+    "window_globals": [
+      "window.ready",
+      "window.renderAt",
+      "window.gameState",
+      "window.gameController",
+      "window.runSelfTests"
+    ],
+    "showcase": {
+      "output_path": "showcase-1080p60.mp4",
+      "width": 1920,
+      "height": 1080,
+      "fps": 60,
+      "duration_s": 60,
+      "total_frames": 3600,
+      "video_codec": "h264",
+      "pixel_format": "yuv420p",
+      "color_space": "bt709",
+      "audio_codec": "aac",
+      "audio_sample_rate_hz": 48000,
+      "audio_channels": 2,
+      "true_peak_ceiling_dbtp": -1
+    }
+  }
+}

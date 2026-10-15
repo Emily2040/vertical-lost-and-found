@@ -1,0 +1,687 @@
+{
+  "project": "vertical-lost-and-found",
+  "revision": "retry02-materials",
+  "generated_at": "2026-10-14T11:07:05.273683+00:00",
+  "state": "prepared-awaiting-visual-review",
+  "production_ready": false,
+  "material_families": [
+    {
+      "family_id": "handled_lacquer",
+      "model_tool": "Nano Banana via Antigravity native generate_image / image-generator subagent",
+      "prompt": "A flat orthographic material sample of rich deep oxblood-brown lacquered hardwood as on a finely made nineteenth-century railway archive cabinet, matching the warm dark fronts of the saved reference. Quiet fine wood pores and restrained hairline age variation, still predominantly intact smooth lacquer. Uniform neutral diffuse illumination, no shadows, reflections, highlight bands, directional lighting or perspective. One continuous material surface; no cabinet, edges, handles, borders, panels, printed marks, metal flecks or objects. No broad orange wear bands, cracked mud pattern or repeated damaged stripes. It will tile over real Blender geometry; geometry and edge wear are handled separately. Subtle, photographic, close-up surface fidelity.",
+      "reference_inputs": [],
+      "generation_metadata": {
+        "prompt_status": "requested prompt copied verbatim from CLI request; exact image-generator call pending final native manifest",
+        "text_orchestrator_model": "gemini-4-argon-high",
+        "image_backend_model_id": "not exposed by inspected output"
+      },
+      "raw_output_path": "assets/textures/raw/handled_lacquer_raw.jpg",
+      "raw_sha256": "4fa574f52d1900b06615c17b986086db3e8693ab5b0f2db15ad3ac01d1e8ab12",
+      "native_dimensions": [
+        1024,
+        1024
+      ],
+      "target_production_dimensions": [
+        2048,
+        2048
+      ],
+      "repairs_and_authoring": [
+        {
+          "operation": "Lanczos_resize",
+          "from_dimensions": [
+            1024,
+            1024
+          ],
+          "to_dimensions": [
+            2048,
+            2048
+          ],
+          "native_detail_increased": false
+        },
+        {
+          "operation": "periodic_plus_smooth_boundary_repair",
+          "mean_absolute_srgb_delta": 0.0029144971667856632,
+          "max_absolute_srgb_delta": 0.060600855013393046,
+          "albedo_recolouring": false
+        },
+        "4 micrometre RMS smooth directional finish relief; 0.35/1.4 mm correlation; independent roughness variation"
+      ],
+      "numeric_map_boundary": "Authored approximate microstructure, independent of source colour; not measured PBR",
+      "mesh_ids": [
+        "mesh_hero_drawer",
+        "mesh_garden_drawer",
+        "mesh_transfer_chute"
+      ],
+      "uv_set": "UVMap",
+      "material_slot": "mat_handled_lacquer",
+      "physical_tile_size_m": 0.5,
+      "texture_channel_assignment": {
+        "baseColor": "assets/textures/pbr/handled_lacquer_basecolor.png",
+        "normal": "assets/textures/pbr/handled_lacquer_normal.png",
+        "roughness": "assets/textures/pbr/handled_lacquer_roughness.png",
+        "metalness": "assets/textures/pbr/handled_lacquer_metalness.png"
+      },
+      "derived_maps": {
+        "normal": {
+          "path": "assets/textures/pbr/handled_lacquer_normal.png",
+          "sha256": "20cea8217bb43ad4e26a4c3103b7cb29939153f738cb3ddadce3e38ce439fda9",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "color_space": "Non-Color"
+        },
+        "roughness": {
+          "path": "assets/textures/pbr/handled_lacquer_roughness.png",
+          "sha256": "e1d63bb386b377e473ece1d7f1cee049375de842d064c690a8f02189efb9c3d4",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "color_space": "Non-Color"
+        },
+        "metalness": {
+          "path": "assets/textures/pbr/handled_lacquer_metalness.png",
+          "sha256": "d9ad17d6beeabfc5802a4869ae6cca469377cec1e1448bee3c8cc557e2d9323e",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "color_space": "Non-Color"
+        },
+        "basecolor": {
+          "path": "assets/textures/pbr/handled_lacquer_basecolor.png",
+          "sha256": "aa1410ee7c1bb194e5f98f3b7ef89960c0965b241fc407620071547d9b966d88",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "color_space": "sRGB"
+        }
+      }
+    },
+    {
+      "family_id": "luggage_canvas",
+      "model_tool": "Nano Banana via Antigravity native generate_image / image-generator subagent",
+      "prompt": "Flat orthographic macro material sample of tightly woven aged ochre-olive cotton luggage canvas. Fine real interlaced thread structure, quiet natural fibre variation, subdued used colour, uniform neutral diffuse illumination. One continuous textile surface only: NO labels, words, numbers, frames, routing panels, leather tabs, straps, buckles, seams, borders, shadows, perspective or objects. Fine scale suitable for a 0.4m material tile. Seamless or visually repeatable coverage. Do not depict a suitcase or decorative label design.",
+      "reference_inputs": [],
+      "generation_metadata": {
+        "prompt_status": "requested prompt copied verbatim from CLI request; exact image-generator call pending final native manifest",
+        "text_orchestrator_model": "gemini-4-argon-high",
+        "image_backend_model_id": "not exposed by inspected output"
+      },
+      "raw_output_path": "assets/textures/raw/luggage_canvas_raw.jpg",
+      "raw_sha256": "cbd670bd278d77cf0f331023763c39bc8f168f04c3d64c8c4bcb757c5a2add06",
+      "native_dimensions": [
+        1024,
+        1024
+      ],
+      "target_production_dimensions": [
+        2048,
+        2048
+      ],
+      "repairs_and_authoring": [
+        {
+          "operation": "Lanczos_resize",
+          "from_dimensions": [
+            1024,
+            1024
+          ],
+          "to_dimensions": [
+            2048,
+            2048
+          ],
+          "native_detail_increased": false
+        },
+        {
+          "operation": "periodic_plus_smooth_boundary_repair",
+          "mean_absolute_srgb_delta": 0.01609874132415402,
+          "max_absolute_srgb_delta": 0.21819009951310475,
+          "albedo_recolouring": false
+        },
+        "1.5 micrometre RMS stochastic fibre relief, 0.14 mm correlation; no second weave grid and no colour embossing; photographic weave scale is controlled by the 0.10 m tile"
+      ],
+      "numeric_map_boundary": "Authored approximate microstructure, independent of source colour; not measured PBR",
+      "mesh_ids": [
+        "mesh_steamer_trunk",
+        "mesh_rolled_carpet",
+        "mesh_ceramic_parcel",
+        "mesh_rolling_parcel",
+        "mesh_umbrella_case",
+        "mesh_boxed_instruments"
+      ],
+      "uv_set": "UVMap",
+      "material_slot": "mat_luggage_canvas",
+      "physical_tile_size_m": 0.1,
+      "texture_channel_assignment": {
+        "baseColor": "assets/textures/pbr/luggage_canvas_basecolor.png",
+        "normal": "assets/textures/pbr/luggage_canvas_normal.png",
+        "roughness": "assets/textures/pbr/luggage_canvas_roughness.png",
+        "metalness": "assets/textures/pbr/luggage_canvas_metalness.png"
+      },
+      "derived_maps": {
+        "normal": {
+          "path": "assets/textures/pbr/luggage_canvas_normal.png",
+          "sha256": "9f0b58a187082a5ffcff722f12571ec2640c55720f645d7a29943bb7ad947488",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "color_space": "Non-Color"
+        },
+        "roughness": {
+          "path": "assets/textures/pbr/luggage_canvas_roughness.png",
+          "sha256": "52850093696607cbdef7aaba971e4ce34c370f8a23d56f58c206234e5d8fffb0",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "color_space": "Non-Color"
+        },
+        "metalness": {
+          "path": "assets/textures/pbr/luggage_canvas_metalness.png",
+          "sha256": "d9ad17d6beeabfc5802a4869ae6cca469377cec1e1448bee3c8cc557e2d9323e",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "color_space": "Non-Color"
+        },
+        "basecolor": {
+          "path": "assets/textures/pbr/luggage_canvas_basecolor.png",
+          "sha256": "81ab1b2ba165080ad21faeb00c136e3cb2d8f74e45df5adc8168db95f8fa8901",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "color_space": "sRGB"
+        }
+      }
+    },
+    {
+      "family_id": "worn_lining",
+      "model_tool": "Nano Banana via Antigravity native generate_image / image-generator subagent",
+      "prompt": "Flat orthographic close-up material sample of deep burgundy wine-red wool baize lining. Dense soft short felted fibres with subtle tiny-scale nap variation, matte and tactile; the surface should read unmistakably as wool felt, not painted wood. One continuous textile surface with uniform neutral diffuse illumination. NO long streaks, broad pale patches, brushed-paint marks, grain lines, sine stripes, borders, objects, stitching, folds, shadows, perspective, labels or letters. No distressed plank pattern. Fine natural fibre texture suitable for a 0.3m tile.",
+      "reference_inputs": [],
+      "generation_metadata": {
+        "prompt_status": "requested prompt copied verbatim from CLI request; exact image-generator call pending final native manifest",
+        "text_orchestrator_model": "gemini-4-argon-high",
+        "image_backend_model_id": "not exposed by inspected output"
+      },
+      "raw_output_path": "assets/textures/raw/worn_lining_raw.jpg",
+      "raw_sha256": "835a4c97c5ebd5a6e70da2d61c7d38f6312d0d3e463339cfc9423b066333f8bd",
+      "native_dimensions": [
+        1024,
+        1024
+      ],
+      "target_production_dimensions": [
+        2048,
+        2048
+      ],
+      "repairs_and_authoring": [
+        {
+          "operation": "crop",
+          "pixel_bounds": [
+            64,
+            64,
+            960,
+            960
+          ]
+        },
+        {
+          "operation": "Lanczos_resize",
+          "from_dimensions": [
+            896,
+            896
+          ],
+          "to_dimensions": [
+            2048,
+            2048
+          ],
+          "native_detail_increased": false
+        },
+        {
+          "operation": "periodic_plus_smooth_boundary_repair",
+          "mean_absolute_srgb_delta": 0.00595925093361135,
+          "max_absolute_srgb_delta": 0.10715136661741659,
+          "albedo_recolouring": false
+        },
+        "5 micrometre RMS isotropic felt nap, 0.22 mm correlation; no ticking stripe field or albedo-derived relief"
+      ],
+      "numeric_map_boundary": "Authored approximate microstructure, independent of source colour; not measured PBR",
+      "mesh_ids": [
+        "mesh_hero_drawer",
+        "mesh_garden_drawer",
+        "mesh_load_cage"
+      ],
+      "uv_set": "UVMap",
+      "material_slot": "mat_worn_lining",
+      "physical_tile_size_m": 0.25,
+      "texture_channel_assignment": {
+        "baseColor": "assets/textures/pbr/worn_lining_basecolor.png",
+        "normal": "assets/textures/pbr/worn_lining_normal.png",
+        "roughness": "assets/textures/pbr/worn_lining_roughness.png",
+        "metalness": "assets/textures/pbr/worn_lining_metalness.png"
+      },
+      "derived_maps": {
+        "normal": {
+          "path": "assets/textures/pbr/worn_lining_normal.png",
+          "sha256": "158024ea94473f296f9e7d3c71060ad7aaba3d806aa948a5dfbbcd40ca1e9f0f",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "color_space": "Non-Color"
+        },
+        "roughness": {
+          "path": "assets/textures/pbr/worn_lining_roughness.png",
+          "sha256": "73980959bedac3abdd50fef47324204989d8bc774e29787f745974e0b85ead91",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "color_space": "Non-Color"
+        },
+        "metalness": {
+          "path": "assets/textures/pbr/worn_lining_metalness.png",
+          "sha256": "d9ad17d6beeabfc5802a4869ae6cca469377cec1e1448bee3c8cc557e2d9323e",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "color_space": "Non-Color"
+        },
+        "basecolor": {
+          "path": "assets/textures/pbr/worn_lining_basecolor.png",
+          "sha256": "ac4626b564d6f7bde81fc3e4df8560015070d6aa9544973082611c62e3ede3ae",
+          "dimensions": [
+            2048,
+            2048
+          ],
+          "color_space": "sRGB"
+        }
+      }
+    }
+  ],
+  "payload_label_decals": [
+    {
+      "catalog_id": "rolling_parcel_01",
+      "label": "Dispatch Brass Parcel",
+      "mass_kg": 18.0,
+      "contract_mesh_id": "mesh_rolling_parcel",
+      "target_root_mesh": "mesh_rolling_parcel",
+      "decal_mesh_name": "decal_rolling_parcel_01",
+      "material_slot": "mat_label_rolling_parcel_01",
+      "uv_set": "UVMap",
+      "uv_mapping": "Deliberate planar [0,1]x[0,1] on front (-Y) decal face",
+      "stamped_lines": [
+        "PARCEL DISPATCH BAY  •  DISPATCH #R-01",
+        "DISPATCH BRASS PARCEL",
+        "MASS 18 KG"
+      ],
+      "source_raw_output_path": "assets/textures/raw/legacy_labels/luggage_canvas_raw.jpg",
+      "source_raw_sha256": "f57197b676015c7acb496c86709d6e76fe0d2b0297bd04309f16b3824e71d3a4",
+      "texture_channel_assignment": {
+        "baseColor": "assets/textures/pbr/label_rolling_parcel_01_basecolor.png",
+        "roughness": "assets/textures/pbr/label_rolling_parcel_01_roughness.png",
+        "metalness": "assets/textures/pbr/label_rolling_parcel_01_metalness.png",
+        "normal": "assets/textures/pbr/label_rolling_parcel_01_normal.png"
+      },
+      "derived_maps": {
+        "basecolor": {
+          "path": "assets/textures/pbr/label_rolling_parcel_01_basecolor.png",
+          "dimensions": [
+            1024,
+            512
+          ],
+          "sha256": "ce27ba01a8cca1b0b3a45a5db2a91ee70efe095505486af7206042caf0ad6980",
+          "color_space": "sRGB"
+        },
+        "roughness": {
+          "path": "assets/textures/pbr/label_rolling_parcel_01_roughness.png",
+          "dimensions": [
+            1024,
+            512
+          ],
+          "sha256": "f8bb0d23050697748ee9268ddbe44f9eb72727bc45b77f93ebe957fe9a9e38fa",
+          "color_space": "Linear"
+        },
+        "metalness": {
+          "path": "assets/textures/pbr/label_rolling_parcel_01_metalness.png",
+          "dimensions": [
+            1024,
+            512
+          ],
+          "sha256": "d0ee182bb0a9ea40ea62fd3996ba6a09d002523a832332d57db4878c3f8601f9",
+          "color_space": "Linear"
+        },
+        "normal": {
+          "path": "assets/textures/pbr/label_rolling_parcel_01_normal.png",
+          "dimensions": [
+            1024,
+            512
+          ],
+          "sha256": "2a8968e93fc0369752030ee1bd1f3e19a9244a29b8713e1b6980136e7cf04efb",
+          "color_space": "Linear"
+        }
+      },
+      "preservation_note": "Existing exact label copied byte-for-byte; not fresh Nano Banana output"
+    },
+    {
+      "catalog_id": "payload_trunk_01",
+      "label": "Steamer Trunk #A-12",
+      "mass_kg": 35.0,
+      "contract_mesh_id": "mesh_steamer_trunk",
+      "target_root_mesh": "mesh_steamer_trunk",
+      "decal_mesh_name": "decal_payload_trunk_01",
+      "material_slot": "mat_label_payload_trunk_01",
+      "uv_set": "UVMap",
+      "uv_mapping": "Deliberate planar [0,1]x[0,1] on front (-Y) decal face",
+      "stamped_lines": [
+        "CENTRAL RAILWAY ARCHIVE  •  TRUNK #A-12",
+        "STEAMER TRUNK #A-12",
+        "MASS 35 KG"
+      ],
+      "source_raw_output_path": "assets/textures/raw/legacy_labels/luggage_canvas_raw.jpg",
+      "source_raw_sha256": "f57197b676015c7acb496c86709d6e76fe0d2b0297bd04309f16b3824e71d3a4",
+      "texture_channel_assignment": {
+        "baseColor": "assets/textures/pbr/label_payload_trunk_01_basecolor.png",
+        "roughness": "assets/textures/pbr/label_payload_trunk_01_roughness.png",
+        "metalness": "assets/textures/pbr/label_payload_trunk_01_metalness.png",
+        "normal": "assets/textures/pbr/label_payload_trunk_01_normal.png"
+      },
+      "derived_maps": {
+        "basecolor": {
+          "path": "assets/textures/pbr/label_payload_trunk_01_basecolor.png",
+          "dimensions": [
+            1024,
+            512
+          ],
+          "sha256": "9102a0ef59f4baecfcbe709d77fdbe0a0d67e9eeb6ebe675bc4a97cec5ed5524",
+          "color_space": "sRGB"
+        },
+        "roughness": {
+          "path": "assets/textures/pbr/label_payload_trunk_01_roughness.png",
+          "dimensions": [
+            1024,
+            512
+          ],
+          "sha256": "f8bb0d23050697748ee9268ddbe44f9eb72727bc45b77f93ebe957fe9a9e38fa",
+          "color_space": "Linear"
+        },
+        "metalness": {
+          "path": "assets/textures/pbr/label_payload_trunk_01_metalness.png",
+          "dimensions": [
+            1024,
+            512
+          ],
+          "sha256": "d0ee182bb0a9ea40ea62fd3996ba6a09d002523a832332d57db4878c3f8601f9",
+          "color_space": "Linear"
+        },
+        "normal": {
+          "path": "assets/textures/pbr/label_payload_trunk_01_normal.png",
+          "dimensions": [
+            1024,
+            512
+          ],
+          "sha256": "591f2a0c00910520ef7dedf7eeab1105efa20223751e418e1767d4b01a71c9ad",
+          "color_space": "Linear"
+        }
+      },
+      "preservation_note": "Existing exact label copied byte-for-byte; not fresh Nano Banana output"
+    },
+    {
+      "catalog_id": "payload_carpet_02",
+      "label": "Rolled Persian Carpet",
+      "mass_kg": 25.0,
+      "contract_mesh_id": "mesh_rolled_carpet",
+      "target_root_mesh": "mesh_rolled_carpet",
+      "decal_mesh_name": "decal_payload_carpet_02",
+      "material_slot": "mat_label_payload_carpet_02",
+      "uv_set": "UVMap",
+      "uv_mapping": "Deliberate planar [0,1]x[0,1] on front (-Y) decal face",
+      "stamped_lines": [
+        "LOST & FOUND REGISTRY  •  CARPET #B-07",
+        "ROLLED PERSIAN CARPET",
+        "MASS 25 KG"
+      ],
+      "source_raw_output_path": "assets/textures/raw/legacy_labels/luggage_canvas_raw.jpg",
+      "source_raw_sha256": "f57197b676015c7acb496c86709d6e76fe0d2b0297bd04309f16b3824e71d3a4",
+      "texture_channel_assignment": {
+        "baseColor": "assets/textures/pbr/label_payload_carpet_02_basecolor.png",
+        "roughness": "assets/textures/pbr/label_payload_carpet_02_roughness.png",
+        "metalness": "assets/textures/pbr/label_payload_carpet_02_metalness.png",
+        "normal": "assets/textures/pbr/label_payload_carpet_02_normal.png"
+      },
+      "derived_maps": {
+        "basecolor": {
+          "path": "assets/textures/pbr/label_payload_carpet_02_basecolor.png",
+          "dimensions": [
+            1024,
+            512
+          ],
+          "sha256": "50913760fe13336cfed6439d1ac22c725d0ded7185cc5021fb5cc52303180e4f",
+          "color_space": "sRGB"
+        },
+        "roughness": {
+          "path": "assets/textures/pbr/label_payload_carpet_02_roughness.png",
+          "dimensions": [
+            1024,
+            512
+          ],
+          "sha256": "f8bb0d23050697748ee9268ddbe44f9eb72727bc45b77f93ebe957fe9a9e38fa",
+          "color_space": "Linear"
+        },
+        "metalness": {
+          "path": "assets/textures/pbr/label_payload_carpet_02_metalness.png",
+          "dimensions": [
+            1024,
+            512
+          ],
+          "sha256": "d0ee182bb0a9ea40ea62fd3996ba6a09d002523a832332d57db4878c3f8601f9",
+          "color_space": "Linear"
+        },
+        "normal": {
+          "path": "assets/textures/pbr/label_payload_carpet_02_normal.png",
+          "dimensions": [
+            1024,
+            512
+          ],
+          "sha256": "f9adc8ded91e07a3e4fb198588160e22f95e68162217b6bd4de6c076383e4f9b",
+          "color_space": "Linear"
+        }
+      },
+      "preservation_note": "Existing exact label copied byte-for-byte; not fresh Nano Banana output"
+    },
+    {
+      "catalog_id": "payload_ceramic_03",
+      "label": "Crated Ceramic Parcel",
+      "mass_kg": 20.0,
+      "contract_mesh_id": "mesh_ceramic_parcel",
+      "target_root_mesh": "mesh_ceramic_parcel",
+      "decal_mesh_name": "decal_payload_ceramic_03",
+      "material_slot": "mat_label_payload_ceramic_03",
+      "uv_set": "UVMap",
+      "uv_mapping": "Deliberate planar [0,1]x[0,1] on front (-Y) decal face",
+      "stamped_lines": [
+        "PARCEL DISPATCH BAY  •  CERAMIC #C-03",
+        "CRATED CERAMIC PARCEL",
+        "MASS 20 KG"
+      ],
+      "source_raw_output_path": "assets/textures/raw/legacy_labels/luggage_canvas_raw.jpg",
+      "source_raw_sha256": "f57197b676015c7acb496c86709d6e76fe0d2b0297bd04309f16b3824e71d3a4",
+      "texture_channel_assignment": {
+        "baseColor": "assets/textures/pbr/label_payload_ceramic_03_basecolor.png",
+        "roughness": "assets/textures/pbr/label_payload_ceramic_03_roughness.png",
+        "metalness": "assets/textures/pbr/label_payload_ceramic_03_metalness.png",
+        "normal": "assets/textures/pbr/label_payload_ceramic_03_normal.png"
+      },
+      "derived_maps": {
+        "basecolor": {
+          "path": "assets/textures/pbr/label_payload_ceramic_03_basecolor.png",
+          "dimensions": [
+            1024,
+            512
+          ],
+          "sha256": "0e4e2eff7e187779ded876c8e6b288190b32d3cbccd48382dbb8c6c75b29f85c",
+          "color_space": "sRGB"
+        },
+        "roughness": {
+          "path": "assets/textures/pbr/label_payload_ceramic_03_roughness.png",
+          "dimensions": [
+            1024,
+            512
+          ],
+          "sha256": "f8bb0d23050697748ee9268ddbe44f9eb72727bc45b77f93ebe957fe9a9e38fa",
+          "color_space": "Linear"
+        },
+        "metalness": {
+          "path": "assets/textures/pbr/label_payload_ceramic_03_metalness.png",
+          "dimensions": [
+            1024,
+            512
+          ],
+          "sha256": "d0ee182bb0a9ea40ea62fd3996ba6a09d002523a832332d57db4878c3f8601f9",
+          "color_space": "Linear"
+        },
+        "normal": {
+          "path": "assets/textures/pbr/label_payload_ceramic_03_normal.png",
+          "dimensions": [
+            1024,
+            512
+          ],
+          "sha256": "3d133606227931065ea1baec78f9dc1c00eee75cc0eaabd440988565dcb2685a",
+          "color_space": "Linear"
+        }
+      },
+      "preservation_note": "Existing exact label copied byte-for-byte; not fresh Nano Banana output"
+    },
+    {
+      "catalog_id": "payload_umbrella_04",
+      "label": "Cast-Base Umbrella Case",
+      "mass_kg": 15.0,
+      "contract_mesh_id": "mesh_umbrella_case",
+      "target_root_mesh": "mesh_umbrella_case",
+      "decal_mesh_name": "decal_payload_umbrella_04",
+      "material_slot": "mat_label_payload_umbrella_04",
+      "uv_set": "UVMap",
+      "uv_mapping": "Deliberate planar [0,1]x[0,1] on front (-Y) decal face",
+      "stamped_lines": [
+        "ARCHIVAL VAULT WEST  •  UMBRELLA #D-04",
+        "CAST-BASE UMBRELLA CASE",
+        "MASS 15 KG"
+      ],
+      "source_raw_output_path": "assets/textures/raw/legacy_labels/luggage_canvas_raw.jpg",
+      "source_raw_sha256": "f57197b676015c7acb496c86709d6e76fe0d2b0297bd04309f16b3824e71d3a4",
+      "texture_channel_assignment": {
+        "baseColor": "assets/textures/pbr/label_payload_umbrella_04_basecolor.png",
+        "roughness": "assets/textures/pbr/label_payload_umbrella_04_roughness.png",
+        "metalness": "assets/textures/pbr/label_payload_umbrella_04_metalness.png",
+        "normal": "assets/textures/pbr/label_payload_umbrella_04_normal.png"
+      },
+      "derived_maps": {
+        "basecolor": {
+          "path": "assets/textures/pbr/label_payload_umbrella_04_basecolor.png",
+          "dimensions": [
+            1024,
+            512
+          ],
+          "sha256": "560e5a5efe2207741dc22680a3aee295895ae72b9f374ce63b91ca1d389023e8",
+          "color_space": "sRGB"
+        },
+        "roughness": {
+          "path": "assets/textures/pbr/label_payload_umbrella_04_roughness.png",
+          "dimensions": [
+            1024,
+            512
+          ],
+          "sha256": "f8bb0d23050697748ee9268ddbe44f9eb72727bc45b77f93ebe957fe9a9e38fa",
+          "color_space": "Linear"
+        },
+        "metalness": {
+          "path": "assets/textures/pbr/label_payload_umbrella_04_metalness.png",
+          "dimensions": [
+            1024,
+            512
+          ],
+          "sha256": "d0ee182bb0a9ea40ea62fd3996ba6a09d002523a832332d57db4878c3f8601f9",
+          "color_space": "Linear"
+        },
+        "normal": {
+          "path": "assets/textures/pbr/label_payload_umbrella_04_normal.png",
+          "dimensions": [
+            1024,
+            512
+          ],
+          "sha256": "e5af6a8d9694b6fc71ee6801bb33698357d4ed24a9083e42cd588180b5138eae",
+          "color_space": "Linear"
+        }
+      },
+      "preservation_note": "Existing exact label copied byte-for-byte; not fresh Nano Banana output"
+    },
+    {
+      "catalog_id": "payload_instruments_05",
+      "label": "Boxed Surveying Instruments",
+      "mass_kg": 45.0,
+      "contract_mesh_id": "mesh_boxed_instruments",
+      "target_root_mesh": "mesh_boxed_instruments",
+      "decal_mesh_name": "decal_payload_instruments_05",
+      "material_slot": "mat_label_payload_instruments_05",
+      "uv_set": "UVMap",
+      "uv_mapping": "Deliberate planar [0,1]x[0,1] on front (-Y) decal face",
+      "stamped_lines": [
+        "SURVEYING VAULT EAST  •  INSTRUMENTS #E-19",
+        "BOXED SURVEYING INSTRUMENTS",
+        "MASS 45 KG"
+      ],
+      "source_raw_output_path": "assets/textures/raw/legacy_labels/luggage_canvas_raw.jpg",
+      "source_raw_sha256": "f57197b676015c7acb496c86709d6e76fe0d2b0297bd04309f16b3824e71d3a4",
+      "texture_channel_assignment": {
+        "baseColor": "assets/textures/pbr/label_payload_instruments_05_basecolor.png",
+        "roughness": "assets/textures/pbr/label_payload_instruments_05_roughness.png",
+        "metalness": "assets/textures/pbr/label_payload_instruments_05_metalness.png",
+        "normal": "assets/textures/pbr/label_payload_instruments_05_normal.png"
+      },
+      "derived_maps": {
+        "basecolor": {
+          "path": "assets/textures/pbr/label_payload_instruments_05_basecolor.png",
+          "dimensions": [
+            1024,
+            512
+          ],
+          "sha256": "e422c9df73922e388060794ced3bc7cd51d58f2fc2186e85ef512eabcb3c56ad",
+          "color_space": "sRGB"
+        },
+        "roughness": {
+          "path": "assets/textures/pbr/label_payload_instruments_05_roughness.png",
+          "dimensions": [
+            1024,
+            512
+          ],
+          "sha256": "f8bb0d23050697748ee9268ddbe44f9eb72727bc45b77f93ebe957fe9a9e38fa",
+          "color_space": "Linear"
+        },
+        "metalness": {
+          "path": "assets/textures/pbr/label_payload_instruments_05_metalness.png",
+          "dimensions": [
+            1024,
+            512
+          ],
+          "sha256": "d0ee182bb0a9ea40ea62fd3996ba6a09d002523a832332d57db4878c3f8601f9",
+          "color_space": "Linear"
+        },
+        "normal": {
+          "path": "assets/textures/pbr/label_payload_instruments_05_normal.png",
+          "dimensions": [
+            1024,
+            512
+          ],
+          "sha256": "5e70f50b2e31c332dc426181f37ff5c198f00b6abc56e3b8be6907186111c07f",
+          "color_space": "Linear"
+        }
+      },
+      "preservation_note": "Existing exact label copied byte-for-byte; not fresh Nano Banana output"
+    }
+  ],
+  "preparation_script_sha256": "6a22702e7eeede0a0ebe033d8f92a2d279ada896dfac345b81abfaa68c79fa21"
+}
